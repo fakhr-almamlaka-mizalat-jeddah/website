@@ -19,30 +19,22 @@
 مرحباً بكم في **مؤسسة فخر المملكة للمظلات والسواتر بجدة**.
 نقدم حلولاً هندسية متكاملة تجمع بين **قوة التصنيع، جودة المواد، ودقة التنفيذ** لنمنح عملاءنا مشاريع تدوم لسنوات وتقاوم الظروف المناخية في المملكة، مع المحافظة على المظهر الجمالي العصري.
 
-نؤمن أن نجاحنا يبدأ من رضا العميل، لذلك نحرص على تنفيذ كل مشروع وكأنه واجهة لأعمالنا القادمة.
-
----
-
-# لماذا يثق بنا العملاء؟
-
-✅ خامات عالية الجودة.
-✅ تنفيذ هندسي احترافي.
-✅ مقاومة للحرارة والرطوبة والأمطار.
-✅ تصاميم حديثة تناسب جميع المشاريع.
-✅ التزام كامل بالمواعيد.
-✅ أسعار منافسة.
-✅ ضمان على التنفيذ والخامات.
-✅ خدمة ما قبل البيع وما بعد التنفيذ.
-
 ---
 
 # 📸 معرض أعمالنا المميز
 
 | الخدمة | نماذج من أعمالنا |
 | :---: | :---: |
-| **البرجولات** | ![برجولة](images/pergolas/pergolas-modern-pool-shade-jeddah40.webp) |
-| **المظلات** | ![مظلة](images/mizalats/mizalat-shadd-resort-jeddah63.webp) |
+| **البرجولات** | ![نموذج](images/pergolas/pergola-curved-wooden-and-metal-screen-jeddah.webp) <br> ![جديد](images/pergolas/pergolas-modern-pool-shade-jeddah40.webp) |
+| **المظلات** | ![نموذج](images/mizalats/mizalats-decorative-islamic-style-car-parking-shades-jeddah.webp) <br> ![جديد](images/mizalats/mizalat-shadd-resort-jeddah63.webp) |
 | **الهناجر** | ![هنجر](images/hangars/hangars-industrial-warehouse-jeddah11.webp) |
+
+### استعراض إضافي للمشاريع:
+![نموذج 2](images/assets/ads-fakhr-almamlaka-sawater-mizalat-jeddah.webp)
+![نموذج 3](images/assets/fakhr-almamlaka-
+![نموذج 5](images/pergolas/pergola-modern-wood-rooftop-seating-jeddah.webp)
+![نموذج 6](images/pergolas/pergola-rnate-entrance-canopy-design-jeddah.webp)
+![نموذج 7](images/sawaters/pergola-sawater-mizalat-hanger-privacy-fences-jeddah.webp)
 
 ---
 
@@ -62,9 +54,6 @@
 
 ### 🏢 الهناجر والساندوتش بانل
 - هناجر | مستودعات | غرف ساندوتش بانل | ملاحق | مباني جاهزة
-
-### 💎 ألواح اللكسان
-- لكسان شفاف | لكسان ملون | لكسان للأسطح | لكسان للمسابح | لكسان للبرجولات
 
 ---
 
