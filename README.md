@@ -37,7 +37,7 @@
 
 | الشعار الرسمي | أبرز المشاريع المنفذة |
 | :---: | :---: |
-| ![الشعار](images/assets/logo-fakhr-almamlaka-sawater-gray-mizalat-jeddah1.webp) | ![نموذج](images/pergolas/pergola-modern-pool-shade-jeddah40.webp) <br> ![نموذج](images/pergolas/pergola-modern-wood-jeddah.webp) <br> ![نموذج](images/mizalats/mizalats-modern-jeddah.webp) |
+| ![الشعار](images/assets/logo-fakhr-almamlaka-sawater-gray-mizalat-jeddah1.webp) | ![نموذج](images/pergolas/pergolas-modern-pool-shade-jeddah40.webp) <br> ![نموذج](images/pergolas/pergolas-modern-wood-jeddah.webp) <br> ![نموذج](images/mizalats/mizalats-modern-jeddah.webp) |
 
 ### استعراض إضافي للمشاريع:
 ![نموذج](images/assets/ads-fakhr-almamlaka-sawater-mizalat-jeddah1.webp)
