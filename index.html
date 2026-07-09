@@ -1,48 +1,528 @@
-    <section class="hero-section" id="home" style="background: linear-gradient(rgba(17, 20, 26, 0.65), rgba(17, 20, 26, 0.85)), url('images/mizalats/mizalat-hero-image-jeddah1.webp') no-repeat center center; background-size: cover; background-attachment: fixed;">
-        <h1 class="hero-title">مؤسسة <span>فخر المملكة</span> لإنشاء المظلات والسواتر والمشاريع الإنشائية المعتمدة بجدة</h1>
-        <p class="hero-subtitle">الخيار الأول في المملكة لتركيب مظلات السيارات الفاخرة، برجولات حدائق مودرن، السواتر الأمنية للأحواش، وتشييد أضخم المستودعات والهناجر في كافة أحياء جدة ومكة.</p>
-        <div class="cta-buttons">
-            <a href="https://wa.me/966553511013" class="btn-main btn-gold"><i class="fa-brands fa-whatsapp"></i> طلب استشارة وتسعيرة فوراً</a>
-            <a href="tel:0553511013" class="btn-main btn-outline"><i class="fa-solid fa-phone"></i> اتصل بنا الآن</a>
-        </div>
-    </section>
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>مؤسسة فخر المملكة | أفضل مؤسسة مظلات وسواتر بجدة والمملكة</title>
+    
+    <meta name="description" content="مؤسسة فخر المملكة بجدة المتخصصة في تركيب مظلات سيارات وسواتر أحواش، برجولات حدائق مودرن، بناء هناجر ومستودعات، وساندويتش بانل في جدة ومكة وكافة مناطق السعودية بأعلى جودة وأفضل أسعار.">
+    <meta name="keywords" content="أفضل مؤسسة مظلات في جدة, تركيب مظلات وسواتر جدة, مظلات سيارات جدة, برجولات حدائق مودرن, مقاول هناجر ومستودعات, سواتر ومظلات جدة, ساندويتش بانل السعودية">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary-gold: #c5a880; 
+            --gold-hover: #b3956b;
+            --dark-bg: #11141a; 
+            --light-gray: #f8f9fa;
+            --text-color: #333;
+            --white: #ffffff;
+            --navy-blue: #0f2c59; 
+            --teal-bg: #122c34; 
+        }
 
-    <section id="gallery" class="gallery-tabs-section">
-        <h2 class="section-title">المعرض الشامل لجميع أعمالنا</h2>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Cairo', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--light-gray);
+            color: var(--text-color);
+            overflow-x: hidden;
+        }
+
+        /* الهيدر */
+        header {
+            background-color: rgba(17, 20, 26, 0.95);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            border-bottom: 2px solid var(--primary-gold);
+            padding: 10px 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo img {
+            height: 60px;
+            width: auto;
+            display: block;
+            filter: brightness(0) invert(1); /* لتحويل الشعار الرمادي إلى أبيض ليناسب الهيدر الغامق */
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+        }
+
+        .nav-menu a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 15px;
+            transition: 0.3s;
+        }
+
+        .nav-menu a:hover, .nav-menu a.active {
+            color: var(--primary-gold);
+        }
+
+        /* واجهة الـ Hero الرئيسية */
+        .hero-section {
+            /* تم استخدام صورة المسبح الفخمة لجذب الانتباه الفوري */
+            background: linear-gradient(rgba(17, 20, 26, 0.7), rgba(17, 20, 26, 0.85)), 
+                        url('images/pergolas/pergolas-modern-pool-shade-jeddah40.webp') no-repeat center center;
+            background-size: cover;
+            background-attachment: fixed;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            padding-top: 100px;
+        }
+
+        .hero-title {
+            color: #fff;
+            font-size: 32px;
+            font-weight: 900;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+            line-height: 1.4;
+            max-width: 900px;
+        }
+
+        .hero-title span {
+            color: var(--primary-gold);
+        }
+
+        .hero-subtitle {
+            color: #e0e0e0;
+            font-size: 18px;
+            margin-bottom: 30px;
+            max-width: 700px;
+            text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+            line-height: 1.8;
+            font-weight: 600;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .btn-main {
+            padding: 14px 35px;
+            border-radius: 30px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: 0.3s;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-gold {
+            background-color: var(--primary-gold);
+            color: #fff;
+            box-shadow: 0 5px 15px rgba(197, 168, 128, 0.4);
+        }
+
+        .btn-gold:hover {
+            background-color: var(--gold-hover);
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            border: 2px solid #fff;
+            color: #fff;
+            background: rgba(255,255,255,0.1);
+        }
+
+        .btn-outline:hover {
+            background: #fff;
+            color: var(--dark-bg);
+            transform: translateY(-2px);
+        }
+
+        /* البانر الإعلاني التعريفي */
+        .promo-banner {
+            max-width: 1000px;
+            margin: -50px auto 50px auto;
+            position: relative;
+            z-index: 10;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+            border: 3px solid var(--primary-gold);
+        }
         
-        <div class="tabs-header">
-            <button class="tab-btn active" onclick="filterGallery('all')">الكل</button>
-            <button class="tab-btn" onclick="filterGallery('mizalat')">المظلات</button>
-            <button class="tab-btn" onclick="filterGallery('sawater')">السواتر</button>
-            <button class="tab-btn" onclick="filterGallery('pergola')">البرجولات</button>
+        .promo-banner img {
+            width: 100%;
+            display: block;
+            object-fit: cover;
+        }
+
+        /* التنسيقات العامة للعناوين */
+        .section-title {
+            text-align: center;
+            margin: 50px 0 30px 0;
+            font-size: 28px;
+            font-weight: 800;
+            position: relative;
+            padding-bottom: 15px;
+            color: var(--dark-bg);
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background-color: var(--primary-gold);
+            border-radius: 2px;
+        }
+
+        /* 🖼️ شبكة العرض المفتوحة (الجديدة كلياً بدون تصنيفات) */
+        .general-gallery-section {
+            max-width: 1400px; /* توسيع العرض لاستيعاب صور أكثر */
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 25px;
+        }
+
+        .gallery-item {
+            background: #fff;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+            position: relative;
+            transition: all 0.4s ease;
+            cursor: pointer;
+            border: 1px solid #e2e8f0;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+            border-color: var(--primary-gold);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.08);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(17, 20, 26, 0.9), transparent);
+            padding: 30px 20px 20px;
+            color: #fff;
+            text-align: center;
+            font-weight: 700;
+            font-size: 18px;
+            opacity: 0.9;
+            transition: 0.3s;
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+            padding-bottom: 25px;
+            color: var(--primary-gold);
+        }
+
+        /* 📋 الفوتر المطور */
+        footer {
+            background: linear-gradient(135deg, #11141a 0%, #1a2230 100%);
+            color: #cbd5e1;
+            padding: 60px 20px 110px 20px;
+            border-top: 3px solid var(--primary-gold);
+            font-size: 15px;
+            margin-top: 60px;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+        }
+
+        .footer-info-section {
+            text-align: right;
+        }
+
+        .footer-intro-text {
+            font-size: 15.5px;
+            line-height: 1.9;
+            margin-bottom: 30px;
+            color: #94a3b8;
+        }
+
+        .footer-title {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 18px;
+            color: var(--primary-gold);
+            border-right: 3px solid var(--primary-gold);
+            padding-right: 10px;
+        }
+
+        .info-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .info-list li {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 15px;
+            color: #e2e8f0;
+        }
+
+        .info-list li i { color: var(--primary-gold); font-size: 16px; width: 20px; }
+        .info-list a { color: #e2e8f0; text-decoration: none; font-weight: bold; transition: 0.3s; }
+        .info-list a:hover { color: var(--primary-gold); text-decoration: underline; }
+
+        .footer-logo-area {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(197, 168, 128, 0.15);
+            padding: 30px;
+            border-radius: 12px;
+        }
+
+        .footer-logo-area img {
+            max-width: 150px;
+            height: auto;
+            margin-bottom: 15px;
+            filter: brightness(0) invert(1);
+        }
+
+        .marketing-credit { 
+            margin-top: 30px; 
+            font-size: 14px; 
+            color: #64748b; 
+            border-top: 1px solid rgba(255, 255, 255, 0.05); 
+            padding-top: 25px; 
+            text-align: center;
+        }
+        .marketing-credit a { color: var(--primary-gold); text-decoration: none; font-weight: bold; }
+
+        /* الأزرار العائمة */
+        .floating-actions-container {
+            position: fixed;
+            bottom: 25px;
+            left: 20px;
+            display: flex;
+            flex-direction: row-reverse; 
+            gap: 12px;
+            z-index: 9999;
+        }
+
+        .floating-btn {
+            width: 54px;
+            height: 54px;
+            border-radius: 12px; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #ffffff;
+            font-size: 26px;
+            text-decoration: none;
+            box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+            transition: 0.3s;
+        }
+
+        .float-whatsapp { background-color: #00e676; animation: pulse-green 2s infinite; }
+        .float-call { background-color: #1e88e5; animation: pulse-blue 2s infinite 1s; }
+        .floating-btn:hover { transform: scale(1.1) translateY(-5px); }
+
+        @keyframes pulse-green {
+            0% { box-shadow: 0 0 0 0 rgba(0,230,118, 0.7); }
+            70% { box-shadow: 0 0 0 15px rgba(0,230,118, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(0,230,118, 0); }
+        }
+
+        @keyframes pulse-blue {
+            0% { box-shadow: 0 0 0 0 rgba(30,136,229, 0.7); }
+            70% { box-shadow: 0 0 0 15px rgba(30,136,229, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(30,136,229, 0); }
+        }
+
+        @media (max-width: 768px) {
+            .hero-title { font-size: 24px; }
+            .hero-subtitle { font-size: 15px; }
+            .footer-container { grid-template-columns: 1fr; }
+            .promo-banner { margin-top: 20px; border-radius: 0; border-left: none; border-right: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <!-- تم استخدام الشعار المقدم -->
+                <img src="images/assets/logo-fakhr-almamlaka-sawater-gray-mizalat-jeddah1.webp" alt="شعار فخر المملكة بجدة" loading="lazy">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="active">الرئيسية</a></li>
+                <li><a href="#gallery">سجل أعمالنا</a></li>
+                <li><a href="https://wa.me/966553511013" target="_blank">طلب تسعيرة</a></li>
+            </ul>
         </div>
+    </header>
 
-        <div class="gallery-grid">
-            <div class="gallery-item mizalat">
-                <img src="images/mizalats/mizalat-tensile-membrane-structure-jeddah2.webp" alt="مظلات شد إنشائي بجدة" loading="lazy">
-                <div class="gallery-item-info">مظلات شد إنشائي ومواقف سيارات فاخرة</div>
-            </div>
-            <div class="gallery-item mizalat">
-                <img src="images/mizalats/mizalat-sayarat-kabooli-jeddah3.webp" alt="مظلات كابولي للسيارات جدة" loading="lazy">
-                <div class="gallery-item-info">مظلات كابولي متينة لمواقف السيارات</div>
-            </div>
-
-            <div class="gallery-item pergola">
-                <img src="images/pergolas/pergola-modern-wood-jeddah4.webp" alt="برجولات حدائق مودرن السعودية" loading="lazy">
-                <div class="gallery-item-info">برجولات حدائق مودرن خشبية وحديدية</div>
-            </div>
-            <div class="gallery-item pergola">
-                <img src="images/pergolas/pergola-hadaeq-modern-jeddah5.webp" alt="تركيب برجولات حدائق بجدة" loading="lazy">
-                <div class="gallery-item-info">برجولات جلسات حدائق راقية ومظللة</div>
-            </div>
-
-            <div class="gallery-item sawater">
-                <img src="images/sawaters/sawater-pvc-khushusiya-jeddah6.webp" alt="سواتر ومظلات أحواش جدة" loading="lazy">
-                <div class="gallery-item-info">سواتر قماش PVC وخصوصية تامة للمنازل</div>
-            </div>
-            <div class="gallery-item sawater">
-                <img src="images/sawaters/sawater-khashab-plastic-jeddah7.webp" alt="سواتر خشب بلاستيكي أحواش" loading="lazy">
-                <div class="gallery-item-info">سواتر بلاستيك شرائح جدارية ومجدول فاخر</div>
-            </div>
+    <section class="hero-section" id="home">
+        <h1 class="hero-title">نصنع الظل... ونبني الثقة مع مؤسسة <span>فخر المملكة</span> بجدة</h1>
+        <p class="hero-subtitle">تصميم • تصنيع • توريد • تركيب | مظلات، سواتر، برجولات، بيوت شعر، هناجر وساندوتش بانل. الجودة ليست خياراً... بل هي معيارنا في كل مشروع.</p>
+        <div class="cta-buttons">
+            <a href="https://wa.me/966553511013?text=مرحباً%20مؤسسة%20فخر%20المملكة،%20أرغب%20في%20الحصول%20على%20عرض%20سعر." class="btn-main btn-gold" target="_blank"><i class="fa-brands fa-whatsapp"></i> تواصل عبر واتساب</a>
+            <a href="tel:0553511013" class="btn-main btn-outline"><i class="fa-solid fa-phone"></i> اتصل المبيعات</a>
         </div>
     </section>
+
+    <!-- توظيف صورة الإعلان بشكل جذاب لكسر الجمود قبل المعرض -->
+    <div class="promo-banner">
+        <a href="https://wa.me/966553511013" target="_blank">
+            <img src="images/assets/ads-fakhr-almamlaka-sawater-mizalat-jeddah1.webp" alt="إعلانات وعروض مؤسسة فخر المملكة" loading="lazy">
+        </a>
+    </div>
+
+    <!-- شبكة المعرض العامة (تقبل عدد غير محدود من الصور المستقلة) -->
+    <section id="gallery" class="general-gallery-section">
+        <h2 class="section-title">معرض أعمالنا الشامل المتميز</h2>
+        
+        <div class="gallery-grid">
+            <!-- الصورة 1 -->
+            <div class="gallery-item" onclick="window.open('https://wa.me/966553511013', '_blank')">
+                <img src="images/mizalats/mizalats-modern-jeddah.webp" alt="مظلات مودرن حديثة بجدة" loading="lazy">
+                <div class="gallery-overlay">مظلات عصرية وتصاميم حديثة</div>
+            </div>
+
+            <!-- الصورة 2 -->
+            <div class="gallery-item" onclick="window.open('https://wa.me/966553511013', '_blank')">
+                <img src="images/pergolas/pergolas-modern-wood-jeddah.webp" alt="برجولات خشبية مودرن" loading="lazy">
+                <div class="gallery-overlay">برجولات خشبية فاخرة</div>
+            </div>
+
+            <!-- الصورة 3 -->
+            <div class="gallery-item" onclick="window.open('https://wa.me/966553511013', '_blank')">
+                <img src="images/pergolas/pergolas-sawater-mizalat-hanger-privacy-fences-jeddah.webp" alt="سواتر ومظلات حماية وخصوصية" loading="lazy">
+                <div class="gallery-overlay">سواتر وحلول الخصوصية المتكاملة</div>
+            </div>
+
+            <!-- الصورة 4 -->
+            <div class="gallery-item" onclick="window.open('https://wa.me/966553511013', '_blank')">
+                <img src="images/pergolas/pergolas-modern-backyard-designs-jeddah.webp" alt="تصاميم حدائق خلفية مودرن" loading="lazy">
+                <div class="gallery-overlay">تجهيز وتظليل الحدائق الخلفية</div>
+            </div>
+
+            <!-- الصورة 5 -->
+            <div class="gallery-item" onclick="window.open('https://wa.me/966553511013', '_blank')">
+                <img src="images/pergolas/pergolas-modern-wood-seating-jeddah.webp" alt="جلسات خشبية مودرن" loading="lazy">
+                <div class="gallery-overlay">جلسات خارجية راقية</div>
+            </div>
+
+            <!-- الصورة 6 -->
+            <div class="gallery-item" onclick="window.open('https://wa.me/966553511013', '_blank')">
+                <img src="images/sawaters/sawaters-building-wall-jeddah.webp" alt="سواتر جدارية للمباني بجدة" loading="lazy">
+                <div class="gallery-overlay">سواتر جدارية أمنية للمباني</div>
+            </div>
+
+            <!-- الصورة 7 -->
+            <div class="gallery-item" onclick="window.open('https://wa.me/966553511013', '_blank')">
+                <img src="images/others/hangars-industrial-warehouse-jeddah11.webp" alt="بناء هناجر ومستودعات صناعية" loading="lazy">
+                <div class="gallery-overlay">تنفيذ هناجر ومستودعات ضخمة</div>
+            </div>
+            
+            <!-- يمكنك إضافة أي عدد من عناصر <div class="gallery-item"> هنا مستقبلاً -->
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info-section">
+                <h4 class="footer-title">لماذا يثق بنا العملاء؟</h4>
+                <p class="footer-intro-text">نقدم حلولاً هندسية متكاملة تجمع بين قوة التصنيع، جودة المواد، ودقة التنفيذ لنمنح عملاءنا مشاريع تدوم لسنوات وتقاوم الظروف المناخية في المملكة. ضمان على التنفيذ والخامات مع أسعار منافسة وخدمة ما بعد البيع.</p>
+                
+                <h4 class="footer-title">تواصل معنا</h4>
+                <ul class="info-list">
+                    <li><i class="fa-solid fa-phone"></i> <strong>رقم الجوال:</strong> <a href="tel:0553511013">0553511013</a></li>
+                    <li><i class="fa-brands fa-whatsapp"></i> <strong>واتساب:</strong> <a href="https://wa.me/966553511013" target="_blank">0553511013</a></li>
+                    <li><i class="fa-solid fa-envelope"></i> <strong>البريد:</strong> <a href="mailto:fakhralmamlakamizalatservicesj@gmail.com">fakhralmamlakamizalatservicesj@gmail.com</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-logo-area">
+                <img src="images/assets/logo-fakhr-almamlaka-sawater-gray-mizalat-jeddah1.webp" alt="شعار فخر المملكة للمظلات والسواتر" onerror="this.style.display='none'">
+                <div style="font-size: 22px; font-weight: 900; color: #fff;">فخر المملكة</div>
+            </div>
+        </div>
+        
+        <div class="marketing-credit">
+            تطوير وإشراف هندسي وتسويق/ <a href="https://wa.me/966552263681" target="_blank">المهندس وجدي الحالمي (00966552263681) <i class="fa-brands fa-whatsapp" style="color: #25d366;"></i></a>
+        </div>
+    </footer>
+
+    <div class="floating-actions-container">
+        <a href="https://wa.me/966553511013?text=مرحباً%20مؤسسة%20فخر%20المملكة،%20أرغب%20في%20الحصول%20على%20عرض%20سعر." class="floating-btn float-whatsapp" title="تواصل عبر الواتساب" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <a href="tel:0553511013" class="floating-btn float-call" title="اتصال هاتفي مباشر">
+            <i class="fa-solid fa-phone-volume"></i>
+        </a>
+    </div>
+
+</body>
+</html>
