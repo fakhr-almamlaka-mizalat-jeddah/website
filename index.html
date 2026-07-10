@@ -2,84 +2,78 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>مؤسسة فخر المملكة للمظلات والسواتر بجدة</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        body { font-family: 'Tajawal', sans-serif; }
+        body { font-family: 'Tajawal', sans-serif; background-color: #f8fafc; }
+        .gallery-track { display: flex; gap: 1rem; overflow-x: auto; padding: 1rem; scrollbar-width: thin; }
         .bg-navy { background-color: #0f172a; }
     </style>
 </head>
-<body class="bg-gray-50">
+<body>
 
-    <!-- 1. مقدمة الواجهة -->
-    <section class="py-20 px-6 text-center bg-white">
+    <header class="bg-white shadow-sm py-4 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <h2 class="text-2xl font-black text-blue-900">فخر المملكة</h2>
+            <nav class="hidden md:flex gap-6 font-bold text-gray-700">
+                <a href="#hero">الرئيسية</a><a href="#services">خدماتنا</a><a href="#gallery">المعرض</a><a href="#comments">الآراء</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero" class="py-20 px-6 text-center bg-white">
         <h1 class="text-3xl font-bold text-gray-900 mb-4">مؤسسة فخر المملكة الرسمية بجدة</h1>
         <p class="text-xl text-blue-600 font-semibold mb-6">نبتكر الفخامة والظلال الدائمة لمساحاتكم الخارجية</p>
         <p class="max-w-3xl mx-auto text-gray-600 leading-relaxed">متخصصون في تصميم وتوريد وتركيب كافة أعمال المظلات الحديثة البرجولات الخشبية والحديدية، السواتر الحاجبة للرؤية والهناجر الإنشائية بجدة والمناطق المحيطة بمعايير هندسية مقاومة للرطوبة والحرارة العالية.</p>
     </section>
 
-    <!-- 2. النبذة -->
-    <section class="py-16 px-6 bg-gray-100">
+    <section class="py-16 px-6">
         <div class="max-w-4xl mx-auto">
             <h2 class="text-2xl font-bold mb-6 border-r-4 border-blue-600 pr-4">نبذة عن مؤسسة فخر المملكة بجدة</h2>
-            <p class="mb-4 text-gray-700">تتميز مؤسسة فخر المملكة لإنشاء المظلات والسواتر بجدة بريادتها الممتدة في تنفيذ كبرى المشاريع الإنشائية.</p>
-            <p class="text-gray-700 leading-relaxed">ساندويتش بانل، المظلات السكنية والتجارية، الهناجر، والبرجولات في السعودية. تلتزم بتقديم حلول هندسية متطورة باستخدام أجود الخامات العالمية المعتمدة لضمان أقصى درجات الحماية ومقاومة تقلبات الطقس والمناخ بأطول فترات الضمان وبأعلى معايير الدقة الفنية.</p>
+            <p class="text-gray-700 leading-relaxed">تتميز مؤسسة فخر المملكة لإنشاء المظلات والسواتر بجدة بريادتها الممتدة في تنفيذ كبرى المشاريع الإنشائية. ساندويتش بانل، المظلات السكنية والتجارية، الهناجر، والبرجولات في السعودية. تلتزم بتقديم حلول هندسية متطورة باستخدام أجود الخامات العالمية المعتمدة لضمان أقصى درجات الحماية ومقاومة تقلبات الطقس والمناخ بأطول فترات الضمان وبأعلى معايير الدقة الفنية.</p>
         </div>
     </section>
 
-    <!-- 3. خبرة العمل (باللون الكحلي الداكن) -->
-    <section class="bg-navy py-16 px-6 text-white">
-        <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-            <div>
-                <p class="leading-relaxed mb-6">نمتلك خبرة واسعة في مجال المظلات والسواتر والمقاولات بجدة، مما يضمن لك الحصول على أفضل الخدمات، كما نستخدم أجود أنواع المواد الخام المعتمدة في السعودية ونعتمد على أحدث التقنيات لضمان منتجاتنا وخدماتنا بضمان رسمي ممتد.</p>
-                <div class="flex gap-4">
-                    <a href="https://wa.me/966553511013?text=أهلاً، أود الاستفسار عن خدمات المظلات والسواتر" class="bg-blue-600 px-8 py-3 rounded-lg font-bold">طلب الآن</a>
-                    <button class="border border-white px-8 py-3 rounded-lg">المزيد</button>
-                </div>
-            </div>
-            <div class="grid grid-cols-2 gap-6 text-center">
-                <div class="bg-gray-800 p-6 rounded-xl"><h3 class="text-3xl font-bold text-blue-400">+20</h3><p>سنة خبرة عمل معتمدة</p></div>
-                <div class="bg-gray-800 p-6 rounded-xl"><h3 class="text-3xl font-bold text-blue-400">+600</h3><p>مشروع مكتمل بالسعودية</p></div>
-                <div class="bg-gray-800 p-6 rounded-xl col-span-2"><h3 class="text-3xl font-bold text-blue-400">+300</h3><p>عميل دائم في جدة ومكة</p></div>
-            </div>
+    <section id="gallery" class="py-10 bg-white">
+        <h3 class="text-center text-xl font-bold mb-4">المسار الأول (35 صورة)</h3>
+        <div class="gallery-track" id="track1"></div>
+        <h3 class="text-center text-xl font-bold mt-10 mb-4">المسار الثاني (35 صورة)</h3>
+        <div class="gallery-track" id="track2"></div>
+    </section>
+
+    <section class="bg-navy py-16 px-6 text-white text-center">
+        <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div><h3 class="text-4xl font-bold text-blue-400">+20</h3><p>سنة خبرة عمل معتمدة</p></div>
+            <div><h3 class="text-4xl font-bold text-blue-400">+600</h3><p>مشروع مكتمل بالسعودية</p></div>
+            <div><h3 class="text-4xl font-bold text-blue-400">+300</h3><p>عميل دائم في جدة ومكة</p></div>
         </div>
     </section>
 
-    <!-- 4. تذييل الصفحة -->
     <footer class="bg-gray-900 text-gray-400 py-12 px-6">
-        <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
-            <div class="space-y-4">
-                <p>البريد الإلكتروني: fakhralmamlakamizalatservicesj@gmail.com</p>
-                <p class="text-2xl font-bold text-white">0553511013</p>
+        <div class="max-w-6xl mx-auto grid md:grid-cols-4 gap-8">
+            <div><p>البريد: fakhralmamlakamizalatservicesj@gmail.com</p></div>
+            <div class="flex flex-col gap-2">
+                <a href="#">الرئيسية</a><a href="#">خدماتنا</a><a href="#">المعرض الشامل</a>
             </div>
-            <div class="grid grid-cols-2 gap-4">
-                <a href="#">الرئيسية</a><a href="#">خدماتنا</a>
-                <a href="#">فيديوهات العمل</a><a href="#">إحصائياتنا</a>
-                <a href="#">المعرض الشامل</a><a href="#">آراء العملاء</a>
-            </div>
-            <div>
-                <h4 class="text-white font-bold mb-2">مواعيد العمل</h4>
-                <p>السبت - الخميس: 7ص - 11م</p>
-                <p>الجمعة: 1م - 11م</p>
-            </div>
-        </div>
-        <div class="text-center mt-12 pt-8 border-t border-gray-800">
-            <p>© 2026 جميع الحقوق محفوظة لموقع مظلات وسواتر جدة - مؤسسة فخر المملكة</p>
-            <p class="mt-2">تطوير وإشراف هندسي: م/ وجدي الحالمي (00966552263681)</p>
+            <div><h4 class="text-white font-bold">المواعيد</h4><p>السبت-الخميس: 7ص-11م<br>الجمعة: 1م-11م</p></div>
+            <div><p>تطوير: م/ وجدي الحالمي<br>00966552263681</p></div>
         </div>
     </footer>
 
-    <!-- الأزرار العائمة (واتساب واتصال) -->
     <div class="fixed bottom-6 left-6 flex flex-col gap-4 z-50">
-        <a href="https://wa.me/966553511013?text=مرحباً، أود الاستفسار من مؤسسة فخر المملكة" class="bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center text-2xl shadow-lg hover:scale-110 transition">
-            <i class="fab fa-whatsapp"></i>
-        </a>
-        <a href="tel:0553511013" class="bg-blue-600 text-white w-14 h-14 rounded-full flex items-center justify-center text-2xl shadow-lg hover:scale-110 transition">
-            <i class="fas fa-phone"></i>
-        </a>
+        <a href="https://wa.me/966553511013" class="bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center text-2xl shadow-lg"><i class="fab fa-whatsapp"></i></a>
+        <a href="tel:0553511013" class="bg-blue-600 text-white w-14 h-14 rounded-full flex items-center justify-center text-2xl shadow-lg"><i class="fas fa-phone"></i></a>
     </div>
 
+    <script>
+        // توليد الصور للمسارين
+        const track1 = document.getElementById('track1');
+        const track2 = document.getElementById('track2');
+        for(let i=1; i<=35; i++) {
+            track1.innerHTML += `<img src="images/path1-${i}.jpg" class="w-64 h-40 object-cover rounded-lg" onerror="this.src='https://via.placeholder.com/400'">`;
+            track2.innerHTML += `<img src="images/path2-${i}.jpg" class="w-64 h-40 object-cover rounded-lg" onerror="this.src='https://via.placeholder.com/400'">`;
+        }
+    </script>
 </body>
 </html>
