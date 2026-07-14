@@ -35,7 +35,7 @@
         body {
             background-color: var(--light-color);
             background-image: linear-gradient(rgba(247, 250, 252, 0.9), rgba(247, 250, 252, 0.9)), 
-                              url('./images/assets/mizalat-background-structure-fakhr-almamlaka-jeddah114.webp');
+                              url('../images/assets/mizalat-background-structure-fakhr-almamlaka-jeddah114.webp');
             background-attachment: fixed;
             background-size: cover;
             color: var(--dark-color);
@@ -197,7 +197,7 @@
         .service-info h4 { font-size: 1.2rem; color: var(--secondary-color); margin-bottom: 15px; }
         .service-info p { color: #555; margin-bottom: 10px; text-align: justify; }
 
-        /* المعارض الدائرية المزدوجة (السلايدر التمريري لـ 90 صورة مقسمة) */
+        /* المعارض الدائرية المزدوجة */
         .gallery-section {
             background: var(--primary-color);
             color: var(--white);
@@ -348,7 +348,7 @@
         .btn-call { background: #2b6cb0; color: white; text-decoration: none; padding: 12px 25px; border-radius: 5px; font-weight: bold; }
         .btn-whatsapp { background: #38a169; color: white; text-decoration: none; padding: 12px 25px; border-radius: 5px; font-weight: bold; }
 
-        /* قسم بصمة المطور والمهندس بتصميم احترافي ملفت وصغير */
+        /* قسم بصمة المطور والمهندس */
         .developer-signature {
             margin-top: 25px;
             border-top: 1px solid #2d3748;
@@ -392,7 +392,23 @@
             font-weight: bold;
         }
 
-        /* الأزرار الدائرية العائمة للتواصل أسفل الشاشة جهة اليسار */
+        /* حركات احترافية ملفتة للأزرار العائمة */
+        @keyframes customPulse {
+            0% { transform: scale(1); box-shadow: 0 4px 15px rgba(0,0,0,0.3); }
+            50% { transform: scale(1.12); box-shadow: 0 8px 25px rgba(0,0,0,0.45); }
+            100% { transform: scale(1); box-shadow: 0 4px 15px rgba(0,0,0,0.3); }
+        }
+
+        @keyframes swingTilt {
+            0%, 100% { transform: rotate(0deg); }
+            15% { transform: rotate(-12deg); }
+            30% { transform: rotate(10deg); }
+            45% { transform: rotate(-8deg); }
+            60% { transform: rotate(6deg); }
+            75% { transform: rotate(-4deg); }
+        }
+
+        /* الأزرار الدائرية العائمة أسفل الشاشة جهة اليسار */
         .floating-contact-container {
             position: fixed;
             bottom: 25px;
@@ -412,21 +428,25 @@
             align-items: center;
             color: var(--white);
             text-decoration: none;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
             transition: var(--transition);
             font-size: 1.6rem;
+            animation: customPulse 2s infinite ease-in-out;
         }
 
-        .floating-btn:hover {
-            transform: scale(1.1) translateY(-3px);
-        }
-
+        /* تفعيل تأثير الهز المتناوب بشكل دوري لجذب الانتباه */
         .floating-btn.float-whatsapp {
             background-color: #25d366;
+            animation: customPulse 2.2s infinite ease-in-out, swingTilt 5s infinite ease-in-out 1s;
         }
 
         .floating-btn.float-call {
             background-color: #007bff;
+            animation: customPulse 2s infinite ease-in-out, swingTilt 5s infinite ease-in-out;
+        }
+
+        .floating-btn:hover {
+            transform: scale(1.18) !important;
+            filter: brightness(1.1);
         }
 
         @media (max-width: 768px) {
@@ -451,8 +471,8 @@
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "name": "مؤسسة فخر المملكة للمظلات والسواتر",
-      "image": "./images/assets/logo-best-fakhr-almamlaka-sawater-gray-mizalat-fakhr-almamlaka-jeddah1.webp",
-      "telephone": "009665553511013",
+      "image": "../images/assets/logo-best-fakhr-almamlaka-sawater-gray-mizalat-fakhr-almamlaka-jeddah1.webp",
+      "telephone": "00966553511013",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "جدة",
@@ -473,8 +493,9 @@
     <header>
         <div class="header-container">
             <div class="logo">
-                <img src="./images/assets/logo-best-fakhr-almamlaka-sawater-gray-mizalat-fakhr-almamlaka-jeddah1.webp" 
+                <img src="../images/assets/logo-best-fakhr-almamlaka-sawater-gray-mizalat-fakhr-almamlaka-jeddah1.webp" 
                      alt="شعار مؤسسة فخر المملكة للمظلات والسواتر"
+                     loading="lazy"
                      onerror="this.onerror=null; this.src='https://placehold.co/200x70/1a365d/ffffff?text=Fakhr+Almamlaka';">
             </div>
             <nav>
@@ -501,8 +522,9 @@
         <div class="ad-box" id="banner-ad-box">
             <div class="ad-content">
                 <img id="dynamic-ad-img" 
-                     src="./images/assets/ads-fakhr-almamlaka-sawater-mizalat-white-fakhr-almamlaka-jeddah2.webp" 
+                     src="../images/assets/ads-fakhr-almamlaka-sawater-mizalat-white-fakhr-almamlaka-jeddah2.webp" 
                      alt="عرض خاص من فخر المملكة للمظلات والسواتر"
+                     loading="lazy"
                      onerror="this.onerror=null; this.src='https://placehold.co/800x350/1a365d/ffffff?text=Special+Offer';">
                 <h3 id="ad-title-text">عرض الموسم: تركيب مظلات سيارات بأسعار تنافسية وضمان 10 سنوات</h3>
                 <p id="ad-desc-text">خصومات حصرية تصل إلى 25% على المظلات الشراعية ومظلات الـ PVC الفاخرة هذا الشهر. اتصل بنا الآن لتأكيد طلبك.</p>
@@ -519,8 +541,9 @@
         <!-- 1. المظلات -->
         <div class="service-card" id="mizalat">
             <div class="service-img-wrapper">
-                <img src="./images/assets/mizalats-best-modern-fakhr-almamlaka-jeddah2.webp" 
+                <img src="../images/assets/mizalats-best-modern-fakhr-almamlaka-jeddah2.webp" 
                      alt="تركيب مظلات بجدة"
+                     loading="lazy"
                      onerror="this.onerror=null; this.src='https://placehold.co/600x400/1a365d/ffffff?text=Mizalat+Jeddah';">
             </div>
             <div class="service-info">
@@ -535,8 +558,9 @@
         <!-- 2. البرجولات -->
         <div class="service-card" id="pergolas">
             <div class="service-img-wrapper">
-                <img src="./images/assets/pergolas-modern-wood-fakhr-almamlaka-jeddah.webp" 
+                <img src="../images/assets/pergolas-modern-wood-fakhr-almamlaka-jeddah.webp" 
                      alt="تركيب برجولات حدائق بجدة"
+                     loading="lazy"
                      onerror="this.onerror=null; this.src='https://placehold.co/600x400/1a365d/ffffff?text=Pergola+Jeddah';">
             </div>
             <div class="service-info">
@@ -551,8 +575,9 @@
         <!-- 3. السواتر -->
         <div class="service-card" id="sawaters">
             <div class="service-img-wrapper">
-                <img src="./images/assets/sawaters-building-wall-fakhr-almamlaka-jeddah.webp" 
+                <img src="../images/assets/sawaters-building-wall-fakhr-almamlaka-jeddah.webp" 
                      alt="تركيب سواتر جدران بجدة"
+                     loading="lazy"
                      onerror="this.onerror=null; this.src='https://placehold.co/600x400/1a365d/ffffff?text=Sawaters+Jeddah';">
             </div>
             <div class="service-info">
@@ -567,8 +592,9 @@
         <!-- 4. الهناجر والمستودعات -->
         <div class="service-card" id="hangars">
             <div class="service-img-wrapper">
-                <img src="./images/assets/hangar-mostawdaat-fakhr-almamlaka-jeddah1.webp" 
+                <img src="../images/assets/hangar-mostawdaat-fakhr-almamlaka-jeddah1.webp" 
                      alt="بناء هناجر ومستودعات بجدة"
+                     loading="lazy"
                      onerror="this.onerror=null; this.src='https://placehold.co/600x400/1a365d/ffffff?text=Hangars+Jeddah';">
             </div>
             <div class="service-info">
@@ -592,7 +618,7 @@
         <h4 style="margin-right: 20px; color: var(--secondary-color);"><i class="fa-solid fa-circle-chevron-left"></i> مسار أعمال المظلات والبرجولات الفاخرة (45 صورة)</h4>
         <div class="slider-container">
             <div class="slider-track" id="track-1">
-                <!-- سيتم توليد الـ 45 صورة الأولى برمجياً من الـ JavaScript -->
+                <!-- سيتم توليد الـ 45 صورة الأولى برمجياً من الـ JavaScript من المجلد الرئيسي مباشرة -->
             </div>
         </div>
 
@@ -600,7 +626,7 @@
         <h4 style="margin-right: 20px; color: var(--secondary-color); margin-top: 30px;"><i class="fa-solid fa-circle-chevron-left"></i> مسار أعمال السواتر والمستودعات والهناجر الهندسية (45 صورة)</h4>
         <div class="slider-container">
             <div class="slider-track" id="track-2">
-                <!-- سيتم توليد الـ 45 صورة الثانية برمجياً من الـ JavaScript -->
+                <!-- سيتم توليد الـ 45 صورة الثانية برمجياً من الـ JavaScript من المجلد الرئيسي مباشرة -->
             </div>
         </div>
     </section>
@@ -620,7 +646,7 @@
         <div class="admin-form" id="adminForm">
             <input type="text" id="input-ad-title" placeholder="عنوان الإعلان أو الباقة الجديدة...">
             <textarea id="input-ad-desc" rows="3" placeholder="تفاصيل العرض، الخصومات ومميزات الباقة الحالية..."></textarea>
-            <input type="text" id="input-ad-img" placeholder="رابط صورة الإعلان الجديد (مثال: ./images/assets/ads-fakhr-almamlaka-sawater-mizalat-fakhr-almamlaka-jeddah1.webp)">
+            <input type="text" id="input-ad-img" placeholder="رابط صورة الإعلان الجديد (مثال: ../images/assets/ads-fakhr-almamlaka-sawater-mizalat-fakhr-almamlaka-jeddah1.webp)">
             <button class="admin-btn" style="background: var(--secondary-color);" onclick="updateAdvertisement()">حفظ ونشر الإعلان فوراً</button>
         </div>
     </section>
@@ -659,32 +685,32 @@
         </div>
     </section>
 
-    <!-- الأزرار الدائرية العائمة أسفل الشاشة لجهة اليسار -->
+    <!-- الأزرار الدائرية العائمة والمتحركة بتأثيرات بصرية جذابة في الزاوية اليسرى السفلى -->
     <div class="floating-contact-container">
-        <!-- زر اتصال هاتفي عائم -->
-        <a href="tel:009665553511013" class="floating-btn float-call" title="اتصل بصاحب المؤسسة">
+        <!-- زر اتصال هاتفي عائم ومتحرك -->
+        <a href="tel:00966553511013" class="floating-btn float-call" title="اتصل بصاحب المؤسسة">
             <i class="fa-solid fa-phone"></i>
         </a>
-        <!-- زر واتساب عائم برقم صاحب المؤسسة مع نص ترحيبي مجهز ومحمي للخصوصية -->
-        <a href="https://wa.me/9665553511013?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%20%D9%88%D8%B1%D8%AD%D9%85%D8%A9%20%D8%A7%D9%84%D9%84%D9%87%20%D9%88%D8%A8%D8%B1%D9%83%D8%A7%D8%AA%D9%87%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%AA%D8%B1%D9%83%D9%8A%D8%A8%20%D8%A7%D9%84%D9%85%D8%B8%D9%84%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D8%B3%D9%88%D8%A7%D8%AA%D8%B1%20%D9%84%D8%AF%D9%8A%D9%83%D9%85." 
+        <!-- زر واتساب عائم ومتحرك برقم صاحب المؤسسة المصحح والرسالة الترحيبية المهيئة -->
+        <a href="https://wa.me/966553511013?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%20%D9%88%D8%B1%D8%AD%D9%85%D8%A9%20%D8%A7%D9%84%D9%84%D9%87%20%D9%88%D8%A8%D8%B1%D9%83%D8%A7%D8%AA%D9%87%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%AA%D8%B1%D9%83%D9%8Item%20%D8%A7%D9%84%D9%85%D8%B8%D9%84%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D8%B3%D9%88%D8%A7%D8%AA%D8%B1%20%D9%84%D8%AF%D9%8A%D9%83%D9%85." 
            target="_blank" class="floating-btn float-whatsapp" title="تواصل واتساب مع صاحب المؤسسة">
             <i class="fa-brands fa-whatsapp"></i>
         </a>
     </div>
 
-    <!-- الفوتر والشعار الأسفل وبيانات التواصل والاتصال الفوري والسريع للزبون -->
+    <!-- الفوتر والشعار الأسفل وبيانات التواصل -->
     <footer>
         <div class="footer-logo">
-            <img src="./images/assets/logo-fakhr-almamlaka-sawater-white-mizalat-fakhr-almamlaka-jeddah2.webp" 
+            <img src="../images/assets/logo-fakhr-almamlaka-sawater-white-mizalat-fakhr-almamlaka-jeddah2.webp" 
                  alt="شعار فخر المملكة السفلي المعتمد"
+                 loading="lazy"
                  onerror="this.onerror=null; this.src='https://placehold.co/250x90/1a365d/ffffff?text=Fakhr+Almamlaka';">
         </div>
         <p>© جميع الحقوق محفوظة لمؤسسة فخر المملكة للمظلات والسواتر بجدة</p>
         
         <div class="contact-buttons">
-            <a href="tel:009665553511013" class="btn-call"><i class="fa-solid fa-phone"></i> اتصال بصاحب المؤسسة</a>
-            <!-- زر واتساب السفلي مع الرسالة الترحيبية -->
-            <a href="https://wa.me/9665553511013?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%20%D9%88%D8%B1%D8%AD%D9%85%D8%A9%20%D8%A7%D9%84%D9%84%D9%87%20%D9%88%D8%A8%D8%B1%D9%83%D8%A7%D8%AA%D9%87%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%AA%D8%B1%D9%83%D9%8A%D8%A8%20%D8%A7%D9%84%D9%85%D8%B8%D9%84%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D8%B3%D9%88%D8%A7%D8%AA%D8%B1%20%D9%84%D8%AF%D9%8A%D9%83%D9%85." 
+            <a href="tel:00966553511013" class="btn-call"><i class="fa-solid fa-phone"></i> اتصال بصاحب المؤسسة</a>
+            <a href="https://wa.me/966553511013?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8Adjust%20%D9%88%D8%B1%D8%AD%D9%85%D8%A9%20%D8%A7%D9%84%D9%84%D9%87%20%D9%88%D8%A8%D8%B1%D9%83%D8%A7%D8%AA%D9%87%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%AA%D8%B1%D9%83%D9%8A%D8%A8%20%D8%A7%D9%84%D9%85%D8%B8%D9%84%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D8%B3%D9%88%D8%A7%D8%AA%D8%B1%20%D9%84%D8%AF%D9%8A%D9%83%D9%85." 
                target="_blank" class="btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> تواصل عبر الواتساب الفوري</a>
         </div>
 
@@ -693,20 +719,21 @@
             <div class="designer-tag">تصميم وتسويق / وجدي الحالمي</div>
             
             <div class="engineer-contact-wrapper">
-                <a href="https://wa.me/9665553511013?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%20%D9%8A%D8%A7%20%D8%A8%D8%B4%D9%85%D9%87%D9%86%D8%AF%D8%B3%D8%8C%20%D8%AA%D9%88%D8%A7%D8%B5%D9%84%D8%AA%20%D9%85%D8%B9%D9%83%20%D9%84%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%20%D9%87%D9%86%D8%AF%D8%B3%D9%8A%D8%A9%20%D8%AE%D8%A7%D8%B5%D8%A9%20%D8%A8%D8%A7%D9%84%D8%AA%D8%B1%D9%83%D9%8A%D8%A8%D8%A7%D8%AA." 
+                <a href="https://wa.me/966552263681?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%20%D9%8A%D8%A7%20%D8%A8%D8%B4%D9%85%D9%87%D9%86%D8%AF%D8%B3%D8%8C%20%D8%AA%D9%88%D8%A7%D8%B5%D9%84%D8%AA%20%D9%85%D8%B9%D9%83%20%D9%84%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AA%D9%81%D8%A7%D8%B5%D9%81%D9%8A%D9%84%20%D9%87%D9%86%D8%AF%D8%B3%D9%8E%D9%8A%D8%A9%20%D8%AE%D8%A7%D8%B5%D8%A9%20%D8%A5%D9%86%D8%B4%D8%A7%D8%A6%D9%8A%D8%A9." 
                    target="_blank" class="engineer-link">
-                   <i class="fa-brands fa-whatsapp"></i> تواصل مع مهندس المؤسسة: 05553511013
+                   <i class="fa-brands fa-whatsapp"></i> تواصل مع مهندس المؤسسة: 0552263681
                 </a>
                 <span class="whatsapp-only-note">تنبيه: التواصل واتساب فقط ⚠️</span>
             </div>
         </div>
     </footer>
 
-    <!-- كود الـ JavaScript التفاعلي المعدل والمصحح بالكامل -->
+    <!-- كود الـ JavaScript التفاعلي المصحح والمطور بالكامل -->
     <script>
-        // مصفوفة تحتوي على جميع الـ 90 صورة بكامل أسمائها المصححة والجاهزة للمسارين
+        // مصفوفة تحتوي على جميع الـ 90 صورة بأسمائها الدقيقة والكاملة
+        // الآن ستُستدعى مباشرة من مجلد images وليس من المجلد الفرعي assets
         const imagesDatabase = [
-            // مظلات (mizalat) - المجموعة الأولى
+            // مظلات (mizalat) - المجموعة الأولى (45 صورة)
             { src: "mizalat-background-structure-fakhr-almamlaka-jeddah114.webp", category: "mizalat", title: "هيكل مظلة فخر المملكة" },
             { src: "mizalats-best-modern-fakhr-almamlaka-jeddah2.webp", category: "mizalat", title: "أفضل مظلات مودرن بجدة" },
             { src: "mizalat-galsat-pvc-mamar-fakhr-almamlaka-jeddah107.webp", category: "mizalat", title: "مظلات جلسات ممرات PVC" },
@@ -747,15 +774,13 @@
             { src: "mizalat-shad-inshai-fakhr-almamlaka-jeddah82.webp", category: "mizalat", title: "تركيب مظلات شد إنشائي" },
             { src: "mizalat-shad-inshai-sahat-fakhr-almamlaka-jeddah100.webp", category: "mizalat", title: "مظلات شد إنشائي للساحات الكبيرة" },
             { src: "mizalats-modern-fakhr-almamlaka-jeddah1.webp", category: "mizalat", title: "تصاميم مظلات حديثة وممتازة" },
-
-            // برجولات ومكملاتها لإكمال المسار الأول (45 صورة في الإجمالي)
             { src: "pergola-khashabia-fakhr-almamlaka-jeddah4.webp", category: "mizalat", title: "برجولة خشبية فخمة للحديقة" },
             { src: "pergolas-modern-wood-fakhr-almamlaka-jeddah.webp", category: "mizalat", title: "برجولات خشبية مودرن" },
             { src: "pergola-backyard-string-lights-fakhr-almamlaka-jeddah54.webp", category: "mizalat", title: "برجولات حديقة خلفية بإضاءة ممتازة" },
             { src: "pergola-corrugated-lexan-carport-shade-fakhr-almamlaka-jeddah52.webp", category: "mizalat", title: "برجولة تظليل لكسان مموج" },
             { src: "pergola-decor-fakhr-almamlaka-jeddah57.webp", category: "mizalat", title: "برجولة ديكور راقية بجدة" },
 
-            // سواتر وقرميد ومكملات أخرى لإثراء المسار الثاني (45 صورة)
+            // سواتر وهناجر ومستودعات - المجموعة الثانية (45 صورة)
             { src: "sawaters-building-wall-fakhr-almamlaka-jeddah.webp", category: "sawater", title: "سواتر جدران الفلل والعمائر" },
             { src: "sawater-fabric-fakhr-almamlaka-jeddah18.webp", category: "sawater", title: "سواتر قماشية ممتازة" },
             { src: "sawater-fabric-fakhr-almamlaka-jeddah20.webp", category: "sawater", title: "سواتر قماش فخر المملكة بجدة" },
@@ -809,16 +834,18 @@
         const track1 = document.getElementById('track-1');
         const track2 = document.getElementById('track-2');
 
-        // فصل مصفوفة الصور بالتساوي وبدقة شديدة لتكون 45 صورة لكل مسار بشكل متناسق وموزع
-        const group1 = imagesDatabase.slice(0, 45); // أول 45 صورة للمسار الأول
-        const group2 = imagesDatabase.slice(45, 90); // الـ 45 صورة التالية للمسار الثاني
+        // تقسيم البيانات بدقة متساوية (45 صورة لكل مسار)
+        const group1 = imagesDatabase.slice(0, 45);
+        const group2 = imagesDatabase.slice(45, 90);
 
         function populateTrack(trackElement, imagesList) {
             imagesList.forEach(img => {
                 const slide = document.createElement('div');
                 slide.className = 'slide-item';
-                // استخدام المسار النسبي المباشر وبدون أي تكرار لاسم المجلد لتلافي خطأ 404
-                const absoluteImagePath = `./images/assets/${img.src}`;
+                
+                // تم تعديل المسار هنا ليكون مباشرًا من مجلد images لتظهر الصور الـ 90 بنجاح
+                const absoluteImagePath = `../images/${img.src}`;
+                
                 slide.innerHTML = `<img src="${absoluteImagePath}" alt="${img.title}" onclick="openLightbox('${absoluteImagePath}')" onerror="this.onerror=null; this.src='https://placehold.co/280x200/1a365d/ffffff?text=Fakhr+Almamlaka';" loading="lazy">`;
                 trackElement.appendChild(slide);
             });
