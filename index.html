@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <style>
-        /* CSS المتكامل والتصميم العصري */
         :root {
             --primary-color: #1a365d;
             --secondary-color: #d69e2e;
@@ -36,7 +35,7 @@
         body {
             background-color: var(--light-color);
             background-image: linear-gradient(rgba(247, 250, 252, 0.9), rgba(247, 250, 252, 0.9)), 
-                              url('images/mizalat-background-structure-fakhr-almamlaka-jeddah114.webp');
+                              url('images/assets/mizalat-background-structure-fakhr-almamlaka-jeddah114.webp');
             background-attachment: fixed;
             background-size: cover;
             color: var(--dark-color);
@@ -218,7 +217,7 @@
             overflow-x: auto;
             scroll-behavior: smooth;
             padding: 10px 20px;
-            scrollbar-width: none; /* لإخفاء شريط التمرير الافتراضي */
+            scrollbar-width: none;
         }
 
         .slider-track::-webkit-scrollbar { display: none; }
@@ -272,7 +271,7 @@
             font-weight: bold;
         }
 
-        /* لوحة تحكم المشرف (مخفية ومحمية بكلمة مرور محلياً للتوضيح والتحكم الفوري) */
+        /* لوحة تحكم المشرف */
         .admin-panel-section {
             max-width: 800px;
             margin: 40px auto;
@@ -297,7 +296,7 @@
             width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #cbd5e0; border-radius: 5px;
         }
 
-        /* نظام التقييمات والتعليقات SEO المربوط ببيانات جوجل المنظمة */
+        /* نظام التقييمات والتعليقات SEO */
         .reviews-section {
             max-width: 1200px;
             margin: 40px auto;
@@ -329,7 +328,7 @@
             border-top: 3px solid var(--primary-color);
         }
 
-        /* الفوتر والشعار الأسفل وأزرار الاتصال السريع */
+        /* الفوتر والشعار الأسفل */
         footer {
             background: #1a202c;
             color: var(--white);
@@ -349,7 +348,6 @@
         .btn-call { background: #2b6cb0; color: white; text-decoration: none; padding: 12px 25px; border-radius: 5px; font-weight: bold; }
         .btn-whatsapp { background: #38a169; color: white; text-decoration: none; padding: 12px 25px; border-radius: 5px; font-weight: bold; }
 
-        /* التجاوب مع الجوال */
         @media (max-width: 768px) {
             .header-container { flex-direction: column; gap: 10px; }
             .service-card { flex-direction: column !important; }
@@ -357,13 +355,13 @@
         }
     </style>
 
-    <!-- Schema.org بيانات منظمة لدعم SEO وتصدر نتائج بحث جوجل الفوري -->
+    <!-- Schema.org بيانات منظمة لدعم SEO -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "name": "مؤسسة فخر المملكة للمظلات والسواتر",
-      "image": "images/logo-best-fakhr-almamlaka-sawater-gray-mizalat-fakhr-almamlaka-jeddah1.webp",
+      "image": "images/assets/logo-best-fakhr-almamlaka-sawater-gray-mizalat-fakhr-almamlaka-jeddah1.webp",
       "telephone": "009665553511013",
       "address": {
         "@type": "PostalAddress",
@@ -385,7 +383,9 @@
     <header>
         <div class="header-container">
             <div class="logo">
-                <img src="images/logo-best-fakhr-almamlaka-sawater-gray-mizalat-fakhr-almamlaka-jeddah1.webp" alt="شعار مؤسسة فخر المملكة للمظلات والسواتر">
+                <img src="images/assets/logo-best-fakhr-almamlaka-sawater-gray-mizalat-fakhr-almamlaka-jeddah1.webp" 
+                     alt="شعار مؤسسة فخر المملكة للمظلات والسواتر"
+                     onerror="this.onerror=null; this.src='https://placehold.co/200x70/1a365d/ffffff?text=Fakhr+Almamlaka';">
             </div>
             <nav>
                 <ul>
@@ -402,7 +402,7 @@
     <!-- مقدمة الموقع الشاملة SEO -->
     <section class="hero">
         <h1>مؤسسة فخر المملكة للمظلات والسواتر بجدة</h1>
-        <p>نقدم أحدث التصاميم العصرية والمبتكرة لتركيب المظلات، السواتر، البرجولات، الخيام، بيوت الشعر، والهناجر بأعلى مستويات الجودة والأمان وبمقاومة تامة لعوامل الطقس القاسية.</p>
+        <p>نقدم أحدث التصاميم العصرية والمبتكرة لتركيب المظلات، السواتر، البرجولات، الخيام، بيوت الشعر، والهناجر بأعلى مستويات الجودة والأمان.</p>
         <h5>للاستشارة الفورية والدعم الفني تواصل معنا مباشرة</h5>
     </section>
 
@@ -410,14 +410,17 @@
     <div class="ads-banner-section">
         <div class="ad-box" id="banner-ad-box">
             <div class="ad-content">
-                <img id="dynamic-ad-img" src="images/ads-fakhr-almamlaka-sawater-mizalat-white-fakhr-almamlaka-jeddah2.webp" alt="عرض خاص من فخر المملكة للمظلات والسواتر">
+                <img id="dynamic-ad-img" 
+                     src="images/assets/ads-fakhr-almamlaka-sawater-mizalat-white-fakhr-almamlaka-jeddah2.webp" 
+                     alt="عرض خاص من فخر المملكة للمظلات والسواتر"
+                     onerror="this.onerror=null; this.src='https://placehold.co/800x350/1a365d/ffffff?text=Special+Offer';">
                 <h3 id="ad-title-text">عرض الموسم: تركيب مظلات سيارات بأسعار تنافسية وضمان 10 سنوات</h3>
                 <p id="ad-desc-text">خصومات حصرية تصل إلى 25% على المظلات الشراعية ومظلات الـ PVC الفاخرة هذا الشهر. اتصل بنا الآن لتأكيد طلبك.</p>
             </div>
         </div>
     </div>
 
-    <!-- قسم الخدمات الرئيسية المدعوم بالكلمات المفتاحية والوسوم الصحيحة لقوقل -->
+    <!-- قسم الخدمات الرئيسية -->
     <section class="services-section">
         <div class="section-title">
             <h2>خدماتنا الاحترافية في المظلات والسواتر بجدة</h2>
@@ -426,12 +429,14 @@
         <!-- 1. المظلات -->
         <div class="service-card" id="mizalat">
             <div class="service-img-wrapper">
-                <img src="images/mizalats-best-modern-fakhr-almamlaka-jeddah2.webp" alt="تركيب مظلات بجدة">
+                <img src="images/assets/mizalats-best-modern-fakhr-almamlaka-jeddah2.webp" 
+                     alt="تركيب مظلات بجدة"
+                     onerror="this.onerror=null; this.src='https://placehold.co/600x400/1a365d/ffffff?text=Mizalat+Jeddah';">
             </div>
             <div class="service-info">
                 <h3>تركيب مظلات متطورة وحديثة</h3>
                 <h4>أهميتها، أنواعها، وجودتها الاستثنائية</h4>
-                <p>تعتبر المظلات عنصراً أساسياً لحماية الممتلكات والسيارات من درجات الحرارة المرتفعة والأشعة فوق البنفسجية في جدة، مما يقلل تلف الأثاث الخارجي والمحركات بشكل ملحوظ.</p>
+                <p>تعتبر المظلات عنصراً أساسياً لحماية الممتلكات والسيارات من درجات الحرارة المرتفعة والأشعة فوق البنفسجية في جدة.</p>
                 <p><strong>أهم الأنواع المتوفرة لدينا:</strong> مظلات PVC كوري وألماني عالي الكثافة، مظلات بولي إيثيلين الاسترالي، مظلات شد إنشائي، ومظلات خشبية وبلاستيكية معالجة.</p>
                 <p><strong>الجودة:</strong> نضمن لك هيكلية حديدية متينة ومقاومة للصدأ والتآكل مع دهانات نارية ومقاومة للحرائق والرطوبة بنسبة 100%.</p>
             </div>
@@ -440,7 +445,9 @@
         <!-- 2. البرجولات -->
         <div class="service-card" id="pergolas">
             <div class="service-img-wrapper">
-                <img src="images/pergolas-modern-wood-fakhr-almamlaka-jeddah.webp" alt="تركيب برجولات حدائق بجدة">
+                <img src="images/assets/pergolas-modern-wood-fakhr-almamlaka-jeddah.webp" 
+                     alt="تركيب برجولات حدائق بجدة"
+                     onerror="this.onerror=null; this.src='https://placehold.co/600x400/1a365d/ffffff?text=Pergola+Jeddah';">
             </div>
             <div class="service-info">
                 <h3>تصميم وتركيب برجولات حدائق وجلسات</h3>
@@ -454,7 +461,9 @@
         <!-- 3. السواتر -->
         <div class="service-card" id="sawaters">
             <div class="service-img-wrapper">
-                <img src="images/sawaters-building-wall-fakhr-almamlaka-jeddah.webp" alt="تركيب سواتر جدران بجدة">
+                <img src="images/assets/sawaters-building-wall-fakhr-almamlaka-jeddah.webp" 
+                     alt="تركيب سواتر جدران بجدة"
+                     onerror="this.onerror=null; this.src='https://placehold.co/600x400/1a365d/ffffff?text=Sawaters+Jeddah';">
             </div>
             <div class="service-info">
                 <h3>تركيب سواتر منزلية وجدارية لتأمين الخصوصية</h3>
@@ -468,7 +477,9 @@
         <!-- 4. الهناجر والمستودعات -->
         <div class="service-card" id="hangars">
             <div class="service-img-wrapper">
-                <img src="images/hangar-mostawdaat-fakhr-almamlaka-jeddah1.webp" alt="بناء هناجر ومستودعات بجدة">
+                <img src="images/assets/hangar-mostawdaat-fakhr-almamlaka-jeddah1.webp" 
+                     alt="بناء هناجر ومستودعات بجدة"
+                     onerror="this.onerror=null; this.src='https://placehold.co/600x400/1a365d/ffffff?text=Hangars+Jeddah';">
             </div>
             <div class="service-info">
                 <h3>بناء وتشييد هناجر ومستودعات ومخازن</h3>
@@ -480,7 +491,7 @@
         </div>
     </section>
 
-    <!-- قسم معرض الصور (100 صورة موزعة على مسارين تمريريين يميناً ويساراً) -->
+    <!-- قسم معرض الصور -->
     <section class="gallery-section" id="gallery">
         <div class="section-title">
             <h2 style="color: white;">معرض الصور ومشاريعنا الفخرية</h2>
@@ -519,12 +530,12 @@
         <div class="admin-form" id="adminForm">
             <input type="text" id="input-ad-title" placeholder="عنوان الإعلان أو الباقة الجديدة...">
             <textarea id="input-ad-desc" rows="3" placeholder="تفاصيل العرض، الخصومات ومميزات الباقة الحالية..."></textarea>
-            <input type="text" id="input-ad-img" placeholder="رابط صورة الإعلان الجديد (مثال: images/ads-fakhr-almamlaka-sawater-mizalat-fakhr-almamlaka-jeddah1.webp)">
+            <input type="text" id="input-ad-img" placeholder="رابط صورة الإعلان الجديد (مثال: images/assets/ads-fakhr-almamlaka-sawater-mizalat-fakhr-almamlaka-jeddah1.webp)">
             <button class="admin-btn" style="background: var(--secondary-color);" onclick="updateAdvertisement()">حفظ ونشر الإعلان فوراً</button>
         </div>
     </section>
 
-    <!-- قسم تقييمات العملاء لرفع SEO وتصدر نتائج قوقل وتأكيد الثقة للزوار -->
+    <!-- قسم تقييمات العملاء -->
     <section class="reviews-section">
         <div class="section-title">
             <h2>تقييمات وآراء عملائنا في جدة</h2>
@@ -544,7 +555,6 @@
             <button class="admin-btn" style="background: #2b6cb0;" onclick="submitNewReview()">إرسال التقييم ونشره</button>
         </div>
 
-        <!-- قائمة عرض التقييمات المحفوظة تفاعلياً تلقائياً -->
         <div class="reviews-display-list" id="reviews-list">
             <div class="review-card">
                 <div style="color: var(--secondary-color); margin-bottom: 5px;"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
@@ -562,7 +572,9 @@
     <!-- الفوتر والشعار الأسفل وبيانات التواصل والاتصال الفوري والسريع للزبون -->
     <footer>
         <div class="footer-logo">
-            <img src="images/logo-fakhr-almamlaka-sawater-white-mizalat-fakhr-almamlaka-jeddah2.webp" alt="شعار فخر المملكة السفلي المعتمد">
+            <img src="images/assets/logo-fakhr-almamlaka-sawater-white-mizalat-fakhr-almamlaka-jeddah2.webp" 
+                 alt="شعار فخر المملكة السفلي المعتمد"
+                 onerror="this.onerror=null; this.src='https://placehold.co/250x90/1a365d/ffffff?text=Fakhr+Almamlaka';">
         </div>
         <p>© جميع الحقوق محفوظة لمؤسسة فخر المملكة للمظلات والسواتر بجدة</p>
         
@@ -689,26 +701,23 @@
             { src: "ads-fakhr-almamlaka-sawater-mizalat-white-fakhr-almamlaka-jeddah2.webp", category: "others", title: "لوحة عروض فخر المملكة" }
         ];
 
-        // 1. فرز الصور ديناميكيًا وتوليد المسارات التمريرية لتجنب تكرار الكود يدوياً والحفاظ على الأداء وسرعة التحميل
+        // 1. فرز الصور ديناميكيًا وتوليد المسارات التمريرية بناءً على المجلد الفرعي (assets)
         const track1 = document.getElementById('track-1');
         const track2 = document.getElementById('track-2');
 
-        // المسار الأول: مظلات وبرجولات
         const group1 = imagesDatabase.filter(img => img.category === 'mizalat' || img.category === 'pergola');
-        // المسار الثاني: سواتر، هناجر، قرميد، وإعلانات أخرى
         const group2 = imagesDatabase.filter(img => img.category === 'sawater' || img.category === 'hangar' || img.category === 'qarmid' || img.category === 'others');
 
-        // دالة توليد عناصر الـ HTML داخل السلايدرات
         function populateTrack(trackElement, imagesList) {
             imagesList.forEach(img => {
                 const slide = document.createElement('div');
                 slide.className = 'slide-item';
-                slide.innerHTML = `<img src="images/${img.src}" alt="${img.title}" onclick="openLightbox('images/${img.src}')" loading="lazy">`;
+                // تحديث المسار هنا ليشير إلى images/assets/ بشكل تلقائي
+                slide.innerHTML = `<img src="images/assets/${img.src}" alt="${img.title}" onclick="openLightbox('images/assets/${img.src}')" onerror="this.onerror=null; this.src='https://placehold.co/280x200/1a365d/ffffff?text=Fakhr+Almamlaka';" loading="lazy">`;
                 trackElement.appendChild(slide);
             });
         }
 
-        // بناء المعارض تلقائيًا
         populateTrack(track1, group1);
         populateTrack(track2, group2);
 
@@ -725,7 +734,7 @@
             lightbox.classList.remove('active');
         }
 
-        // 3. تفعيل وإظهار لوحة تحكم المشرف لإعلانات العروض والباقات بشكل فوري
+        // 3. تفعيل وإظهار لوحة تحكم المشرف
         function toggleAdminForm() {
             const form = document.getElementById('adminForm');
             form.style.display = form.style.display === 'block' ? 'none' : 'block';
@@ -744,14 +753,12 @@
             toggleAdminForm();
         }
 
-        // 4. نظام التقييمات التفاعلي والربط المنظم بمحركات البحث
+        // 4. نظام التقييمات التفاعلي
         let selectedRating = 5;
         const stars = document.querySelectorAll('#stars-selector i');
         
         stars.forEach(star => {
-            // تلوين افتراضي للنجوم الـ 5
             star.classList.add('active');
-            
             star.addEventListener('click', (e) => {
                 selectedRating = e.target.getAttribute('data-value');
                 stars.forEach(s => {
@@ -787,9 +794,8 @@
             `;
             
             list.insertBefore(card, list.firstChild);
-            alert('شكراً لتقييمك الفاخر! تم حفظ المراجعة وضخها في البيانات المنظمة لدعم تصدر محرك البحث جوجل بنجاح.');
+            alert('شكراً لتقييمك الفاخر! تم حفظ المراجعة بنجاح.');
             
-            // تفريغ الحقول بعد الإرسال
             document.getElementById('reviewer-name').value = '';
             document.getElementById('reviewer-comment').value = '';
         }
