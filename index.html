@@ -35,7 +35,7 @@
         body {
             background-color: var(--light-color);
             background-image: linear-gradient(rgba(247, 250, 252, 0.9), rgba(247, 250, 252, 0.9)), 
-                              url('images/assets/mizalat-background-structure-fakhr-almamlaka-jeddah114.webp');
+                              url('./images/assets/mizalat-background-structure-fakhr-almamlaka-jeddah114.webp');
             background-attachment: fixed;
             background-size: cover;
             color: var(--dark-color);
@@ -197,7 +197,7 @@
         .service-info h4 { font-size: 1.2rem; color: var(--secondary-color); margin-bottom: 15px; }
         .service-info p { color: #555; margin-bottom: 10px; text-align: justify; }
 
-        /* المعارض الدائرية المزدوجة (السلايدر التمريري لـ 100 صورة) */
+        /* المعارض الدائرية المزدوجة (السلايدر التمريري لـ 90 صورة مقسمة) */
         .gallery-section {
             background: var(--primary-color);
             color: var(--white);
@@ -348,10 +348,100 @@
         .btn-call { background: #2b6cb0; color: white; text-decoration: none; padding: 12px 25px; border-radius: 5px; font-weight: bold; }
         .btn-whatsapp { background: #38a169; color: white; text-decoration: none; padding: 12px 25px; border-radius: 5px; font-weight: bold; }
 
+        /* قسم بصمة المطور والمهندس بتصميم احترافي ملفت وصغير */
+        .developer-signature {
+            margin-top: 25px;
+            border-top: 1px solid #2d3748;
+            padding-top: 20px;
+            font-size: 0.85rem;
+            color: #a0aec0;
+        }
+
+        .developer-signature .designer-tag {
+            color: var(--secondary-color);
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            font-size: 0.9rem;
+        }
+
+        .engineer-contact-wrapper {
+            margin-top: 10px;
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.03);
+            padding: 8px 15px;
+            border-radius: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .engineer-link {
+            color: #cbd5e0;
+            text-decoration: none;
+            font-weight: 500;
+            transition: var(--transition);
+        }
+        
+        .engineer-link:hover {
+            color: #48bb78;
+        }
+
+        .whatsapp-only-note {
+            display: block;
+            color: #fc8181;
+            font-size: 0.75rem;
+            margin-top: 3px;
+            font-weight: bold;
+        }
+
+        /* الأزرار الدائرية العائمة للتواصل أسفل الشاشة جهة اليسار */
+        .floating-contact-container {
+            position: fixed;
+            bottom: 25px;
+            left: 25px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            z-index: 1500;
+        }
+
+        .floating-btn {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--white);
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            transition: var(--transition);
+            font-size: 1.6rem;
+        }
+
+        .floating-btn:hover {
+            transform: scale(1.1) translateY(-3px);
+        }
+
+        .floating-btn.float-whatsapp {
+            background-color: #25d366;
+        }
+
+        .floating-btn.float-call {
+            background-color: #007bff;
+        }
+
         @media (max-width: 768px) {
             .header-container { flex-direction: column; gap: 10px; }
             .service-card { flex-direction: column !important; }
             .hero h1 { font-size: 2rem; }
+            .floating-contact-container {
+                bottom: 20px;
+                left: 20px;
+            }
+            .floating-btn {
+                width: 50px;
+                height: 50px;
+                font-size: 1.4rem;
+            }
         }
     </style>
 
@@ -361,7 +451,7 @@
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "name": "مؤسسة فخر المملكة للمظلات والسواتر",
-      "image": "images/assets/logo-best-fakhr-almamlaka-sawater-gray-mizalat-fakhr-almamlaka-jeddah1.webp",
+      "image": "./images/assets/logo-best-fakhr-almamlaka-sawater-gray-mizalat-fakhr-almamlaka-jeddah1.webp",
       "telephone": "009665553511013",
       "address": {
         "@type": "PostalAddress",
@@ -383,7 +473,7 @@
     <header>
         <div class="header-container">
             <div class="logo">
-                <img src="images/assets/logo-best-fakhr-almamlaka-sawater-gray-mizalat-fakhr-almamlaka-jeddah1.webp" 
+                <img src="./images/assets/logo-best-fakhr-almamlaka-sawater-gray-mizalat-fakhr-almamlaka-jeddah1.webp" 
                      alt="شعار مؤسسة فخر المملكة للمظلات والسواتر"
                      onerror="this.onerror=null; this.src='https://placehold.co/200x70/1a365d/ffffff?text=Fakhr+Almamlaka';">
             </div>
@@ -411,7 +501,7 @@
         <div class="ad-box" id="banner-ad-box">
             <div class="ad-content">
                 <img id="dynamic-ad-img" 
-                     src="images/assets/ads-fakhr-almamlaka-sawater-mizalat-white-fakhr-almamlaka-jeddah2.webp" 
+                     src="./images/assets/ads-fakhr-almamlaka-sawater-mizalat-white-fakhr-almamlaka-jeddah2.webp" 
                      alt="عرض خاص من فخر المملكة للمظلات والسواتر"
                      onerror="this.onerror=null; this.src='https://placehold.co/800x350/1a365d/ffffff?text=Special+Offer';">
                 <h3 id="ad-title-text">عرض الموسم: تركيب مظلات سيارات بأسعار تنافسية وضمان 10 سنوات</h3>
@@ -429,7 +519,7 @@
         <!-- 1. المظلات -->
         <div class="service-card" id="mizalat">
             <div class="service-img-wrapper">
-                <img src="images/assets/mizalats-best-modern-fakhr-almamlaka-jeddah2.webp" 
+                <img src="./images/assets/mizalats-best-modern-fakhr-almamlaka-jeddah2.webp" 
                      alt="تركيب مظلات بجدة"
                      onerror="this.onerror=null; this.src='https://placehold.co/600x400/1a365d/ffffff?text=Mizalat+Jeddah';">
             </div>
@@ -445,7 +535,7 @@
         <!-- 2. البرجولات -->
         <div class="service-card" id="pergolas">
             <div class="service-img-wrapper">
-                <img src="images/assets/pergolas-modern-wood-fakhr-almamlaka-jeddah.webp" 
+                <img src="./images/assets/pergolas-modern-wood-fakhr-almamlaka-jeddah.webp" 
                      alt="تركيب برجولات حدائق بجدة"
                      onerror="this.onerror=null; this.src='https://placehold.co/600x400/1a365d/ffffff?text=Pergola+Jeddah';">
             </div>
@@ -461,7 +551,7 @@
         <!-- 3. السواتر -->
         <div class="service-card" id="sawaters">
             <div class="service-img-wrapper">
-                <img src="images/assets/sawaters-building-wall-fakhr-almamlaka-jeddah.webp" 
+                <img src="./images/assets/sawaters-building-wall-fakhr-almamlaka-jeddah.webp" 
                      alt="تركيب سواتر جدران بجدة"
                      onerror="this.onerror=null; this.src='https://placehold.co/600x400/1a365d/ffffff?text=Sawaters+Jeddah';">
             </div>
@@ -477,7 +567,7 @@
         <!-- 4. الهناجر والمستودعات -->
         <div class="service-card" id="hangars">
             <div class="service-img-wrapper">
-                <img src="images/assets/hangar-mostawdaat-fakhr-almamlaka-jeddah1.webp" 
+                <img src="./images/assets/hangar-mostawdaat-fakhr-almamlaka-jeddah1.webp" 
                      alt="بناء هناجر ومستودعات بجدة"
                      onerror="this.onerror=null; this.src='https://placehold.co/600x400/1a365d/ffffff?text=Hangars+Jeddah';">
             </div>
@@ -491,7 +581,7 @@
         </div>
     </section>
 
-    <!-- قسم معرض الصور -->
+    <!-- قسم معرض الصور التمريري (المقسّم بدقة 45 صورة لكل مسار) -->
     <section class="gallery-section" id="gallery">
         <div class="section-title">
             <h2 style="color: white;">معرض الصور ومشاريعنا الفخرية</h2>
@@ -499,18 +589,18 @@
         </div>
 
         <!-- المسار الدائري الأول (صور المظلات والبرجولات) -->
-        <h4 style="margin-right: 20px; color: var(--secondary-color);"><i class="fa-solid fa-circle-chevron-left"></i> مسار أعمال المظلات والبرجولات الفاخرة</h4>
+        <h4 style="margin-right: 20px; color: var(--secondary-color);"><i class="fa-solid fa-circle-chevron-left"></i> مسار أعمال المظلات والبرجولات الفاخرة (45 صورة)</h4>
         <div class="slider-container">
             <div class="slider-track" id="track-1">
-                <!-- سيتم توليد الصور برمجياً بالأسفل بكود الـ JavaScript -->
+                <!-- سيتم توليد الـ 45 صورة الأولى برمجياً من الـ JavaScript -->
             </div>
         </div>
 
         <!-- المسار الدائري الثاني (صور السواتر، الهناجر، القرميد، واللوحات الإعلانية) -->
-        <h4 style="margin-right: 20px; color: var(--secondary-color); margin-top: 30px;"><i class="fa-solid fa-circle-chevron-left"></i> مسار أعمال السواتر والمستودعات والهناجر الهندسية</h4>
+        <h4 style="margin-right: 20px; color: var(--secondary-color); margin-top: 30px;"><i class="fa-solid fa-circle-chevron-left"></i> مسار أعمال السواتر والمستودعات والهناجر الهندسية (45 صورة)</h4>
         <div class="slider-container">
             <div class="slider-track" id="track-2">
-                <!-- سيتم توليد الصور برمجياً بالأسفل بكود الـ JavaScript -->
+                <!-- سيتم توليد الـ 45 صورة الثانية برمجياً من الـ JavaScript -->
             </div>
         </div>
     </section>
@@ -530,7 +620,7 @@
         <div class="admin-form" id="adminForm">
             <input type="text" id="input-ad-title" placeholder="عنوان الإعلان أو الباقة الجديدة...">
             <textarea id="input-ad-desc" rows="3" placeholder="تفاصيل العرض، الخصومات ومميزات الباقة الحالية..."></textarea>
-            <input type="text" id="input-ad-img" placeholder="رابط صورة الإعلان الجديد (مثال: images/assets/ads-fakhr-almamlaka-sawater-mizalat-fakhr-almamlaka-jeddah1.webp)">
+            <input type="text" id="input-ad-img" placeholder="رابط صورة الإعلان الجديد (مثال: ./images/assets/ads-fakhr-almamlaka-sawater-mizalat-fakhr-almamlaka-jeddah1.webp)">
             <button class="admin-btn" style="background: var(--secondary-color);" onclick="updateAdvertisement()">حفظ ونشر الإعلان فوراً</button>
         </div>
     </section>
@@ -569,10 +659,23 @@
         </div>
     </section>
 
+    <!-- الأزرار الدائرية العائمة أسفل الشاشة لجهة اليسار -->
+    <div class="floating-contact-container">
+        <!-- زر اتصال هاتفي عائم -->
+        <a href="tel:009665553511013" class="floating-btn float-call" title="اتصل بصاحب المؤسسة">
+            <i class="fa-solid fa-phone"></i>
+        </a>
+        <!-- زر واتساب عائم برقم صاحب المؤسسة مع نص ترحيبي مجهز ومحمي للخصوصية -->
+        <a href="https://wa.me/9665553511013?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%20%D9%88%D8%B1%D8%AD%D9%85%D8%A9%20%D8%A7%D9%84%D9%84%D9%87%20%D9%88%D8%A8%D8%B1%D9%83%D8%A7%D8%AA%D9%87%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%AA%D8%B1%D9%83%D9%8A%D8%A8%20%D8%A7%D9%84%D9%85%D8%B8%D9%84%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D8%B3%D9%88%D8%A7%D8%AA%D8%B1%20%D9%84%D8%AF%D9%8A%D9%83%D9%85." 
+           target="_blank" class="floating-btn float-whatsapp" title="تواصل واتساب مع صاحب المؤسسة">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </div>
+
     <!-- الفوتر والشعار الأسفل وبيانات التواصل والاتصال الفوري والسريع للزبون -->
     <footer>
         <div class="footer-logo">
-            <img src="images/assets/logo-fakhr-almamlaka-sawater-white-mizalat-fakhr-almamlaka-jeddah2.webp" 
+            <img src="./images/assets/logo-fakhr-almamlaka-sawater-white-mizalat-fakhr-almamlaka-jeddah2.webp" 
                  alt="شعار فخر المملكة السفلي المعتمد"
                  onerror="this.onerror=null; this.src='https://placehold.co/250x90/1a365d/ffffff?text=Fakhr+Almamlaka';">
         </div>
@@ -580,15 +683,30 @@
         
         <div class="contact-buttons">
             <a href="tel:009665553511013" class="btn-call"><i class="fa-solid fa-phone"></i> اتصال بصاحب المؤسسة</a>
-            <a href="https://wa.me/9665553511013" target="_blank" class="btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> تواصل عبر الواتساب الفوري</a>
+            <!-- زر واتساب السفلي مع الرسالة الترحيبية -->
+            <a href="https://wa.me/9665553511013?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%20%D9%88%D8%B1%D8%AD%D9%85%D8%A9%20%D8%A7%D9%84%D9%84%D9%87%20%D9%88%D8%A8%D8%B1%D9%83%D8%A7%D8%AA%D9%87%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%AA%D8%B1%D9%83%D9%8A%D8%A8%20%D8%A7%D9%84%D9%85%D8%B8%D9%84%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D8%B3%D9%88%D8%A7%D8%AA%D8%B1%20%D9%84%D8%AF%D9%8A%D9%83%D9%85." 
+               target="_blank" class="btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> تواصل عبر الواتساب الفوري</a>
+        </div>
+
+        <!-- تفاصيل تواصل المهندس وبصمة المصمم الأنيقة والملفتة -->
+        <div class="developer-signature">
+            <div class="designer-tag">تصميم وتسويق / وجدي الحالمي</div>
+            
+            <div class="engineer-contact-wrapper">
+                <a href="https://wa.me/9665553511013?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%20%D9%8A%D8%A7%20%D8%A8%D8%B4%D9%85%D9%87%D9%86%D8%AF%D8%B3%D8%8C%20%D8%AA%D9%88%D8%A7%D8%B5%D9%84%D8%AA%20%D9%85%D8%B9%D9%83%20%D9%84%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%20%D9%87%D9%86%D8%AF%D8%B3%D9%8A%D8%A9%20%D8%AE%D8%A7%D8%B5%D8%A9%20%D8%A8%D8%A7%D9%84%D8%AA%D8%B1%D9%83%D9%8A%D8%A8%D8%A7%D8%AA." 
+                   target="_blank" class="engineer-link">
+                   <i class="fa-brands fa-whatsapp"></i> تواصل مع مهندس المؤسسة: 05553511013
+                </a>
+                <span class="whatsapp-only-note">تنبيه: التواصل واتساب فقط ⚠️</span>
+            </div>
         </div>
     </footer>
 
-    <!-- كود الـ JavaScript التفاعلي بالكامل -->
+    <!-- كود الـ JavaScript التفاعلي المعدل والمصحح بالكامل -->
     <script>
-        // مصفوفة تحتوي على جميع الـ 100 صورة بكامل أسمائها وتصنيفاتها الصحيحة
+        // مصفوفة تحتوي على جميع الـ 90 صورة بكامل أسمائها المصححة والجاهزة للمسارين
         const imagesDatabase = [
-            // مظلات (mizalat)
+            // مظلات (mizalat) - المجموعة الأولى
             { src: "mizalat-background-structure-fakhr-almamlaka-jeddah114.webp", category: "mizalat", title: "هيكل مظلة فخر المملكة" },
             { src: "mizalats-best-modern-fakhr-almamlaka-jeddah2.webp", category: "mizalat", title: "أفضل مظلات مودرن بجدة" },
             { src: "mizalat-galsat-pvc-mamar-fakhr-almamlaka-jeddah107.webp", category: "mizalat", title: "مظلات جلسات ممرات PVC" },
@@ -630,47 +748,14 @@
             { src: "mizalat-shad-inshai-sahat-fakhr-almamlaka-jeddah100.webp", category: "mizalat", title: "مظلات شد إنشائي للساحات الكبيرة" },
             { src: "mizalats-modern-fakhr-almamlaka-jeddah1.webp", category: "mizalat", title: "تصاميم مظلات حديثة وممتازة" },
 
-            // برجولات (pergola)
-            { src: "pergola-khashabia-fakhr-almamlaka-jeddah4.webp", category: "pergola", title: "برجولة خشبية فخمة للحديقة" },
-            { src: "pergolas-modern-wood-fakhr-almamlaka-jeddah.webp", category: "pergola", title: "برجولات خشبية مودرن" },
-            { src: "pergola-backyard-string-lights-fakhr-almamlaka-jeddah54.webp", category: "pergola", title: "برجولات حديقة خلفية بإضاءة ممتازة" },
-            { src: "pergola-corrugated-lexan-carport-shade-fakhr-almamlaka-jeddah52.webp", category: "pergola", title: "برجولة تظليل لكسان مموج" },
-            { src: "pergola-decor-fakhr-almamlaka-jeddah57.webp", category: "pergola", title: "برجولة ديكور راقية بجدة" },
-            { src: "pergola-galsat-hadaiq-tents-fakhr-almamlaka-jeddah14.webp", category: "pergola", title: "برجولات جلسات حدائق خيام" },
-            { src: "pergola-galsat-roof-fakhr-almamlaka-jeddah55.webp", category: "pergola", title: "برجولة أسطح مودرن رائعة" },
-            { src: "pergola-galsat-satah-fakhr-almamlaka-jeddah19.webp", category: "pergola", title: "جلسة سطح منزلية برجولة حديد" },
-            { src: "pergola-glass-room-aluminum-fakhr-almamlaka-jeddah45.webp", category: "pergola", title: "برجولة ألمنيوم مغطاة بالزجاج" },
-            { src: "pergola-hadaeq-fakhr-almamlaka-jeddah18.webp", category: "pergola", title: "برجولات حدائق وتنسيق خارجي" },
-            { src: "pergola-hadid-garden-fakhr-almamlaka-jeddah34.webp", category: "pergola", title: "برجولات حديد للحدائق المنزلية" },
-            { src: "pergola-hadid-laser-fakhr-almamlaka-jeddah32.webp", category: "pergola", title: "برجولة حديد قص ليزر ممتازة" },
-            { src: "pergola-hadid-lexan-mamar-fakhr-almamlaka-jeddah33.webp", category: "pergola", title: "برجولة حديد لكسان للممرات" },
-            { src: "pergola-hadid-lexan-roof-fakhr-almamlaka-jeddah35.webp", category: "pergola", title: "برجولة حديد مغطاة باللكسان" },
-            { src: "pergola-hadid-satayer-fakhr-almamlaka-jeddah12.webp", category: "pergola", title: "برجولة حديد مع ستائر جانبية" },
-            { src: "pergola-jalsat-hadaeq-fakhr-almamlaka-jeddah8.webp", category: "pergola", title: "تصميم برجولات جلسات حدائق" },
-            { src: "pergola-khashabia-fakhr-almamlaka-jeddah6.webp", category: "pergola", title: "برجولات خشبية للساحات والاستراحات" },
-            { src: "pergola-khashabia-shalal-fakhr-almamlaka-jeddah28.webp", category: "pergola", title: "برجولة خشبية مع شلال جداري" },
-            { src: "pergola-khashab-modern-fakhr-almamlaka-jeddah1.webp", category: "pergola", title: "برجولة خشبية مودرن عصرية" },
-            { src: "pergola-luxury-garden-fakhr-almamlaka-jeddah27.webp", category: "pergola", title: "برجولة حدائق راقية ومميزة" },
-            { src: "pergola-luxury-villa-fakhr-almamlaka-jeddah39.webp", category: "pergola", title: "برجولة فلل وقصور فاخرة" },
-            { src: "pergola-modern-fakhr-almamlaka-jeddah5.webp", category: "pergola", title: "برجولات مودرن حديد شكل خشب" },
-            { src: "pergola-modern-fakhr-almamlaka-jeddah10.webp", category: "pergola", title: "برجولات حديثة لجلسات العوائل" },
-            { src: "pergola-modern-fakhr-almamlaka-jeddah59.webp", category: "pergola", title: "برجولة تصميم راقي وعصري" },
-            { src: "pergola-modern-led-lighting-fakhr-almamlaka-jeddah20.webp", category: "pergola", title: "برجولة مودرن مجهزة بإضاءة LED" },
-            { src: "pergola-modern-louvered-led-fakhr-almamlaka-jeddah38.webp", category: "pergola", title: "برجولة شرائح لوفر ألمنيوم مضيئة" },
-            { src: "pergola-modern-pool-shade-fakhr-almamlaka-jeddah40.webp", category: "pergola", title: "برجولة تظليل مسابح حديثة" },
-            { src: "pergolas-modern-backyard-designs-fakhr-almamlaka-jeddah.webp", category: "pergola", title: "تصاميم برجولات حدائق منزلية" },
-            { src: "pergolas-modern-fakhr-almamlaka-jeddah1.webp", category: "pergola", title: "برجولات فخمة ومودرن بجدة" },
-            { src: "pergolas-modern-wood-seating-fakhr-almamlaka-jeddah.webp", category: "pergola", title: "برجولة خشبية للجلسات الخارجية" },
-            { src: "pergolas-sawater-mizalat-hanger-privacy-fences-fakhr-almamlaka-jeddah.webp", category: "pergola", title: "برجولات ومظلات وسواتر فخر المملكة" },
-            { src: "pergola-tasmim-asateh-fakhr-almamlaka-jeddah11.webp", category: "pergola", title: "تصاميم برجولات أسطح ومنازل" },
-            { src: "pergola-tasmim-jalsat-fakhr-almamlaka-jeddah7.webp", category: "pergola", title: "تصميم وتركيب جلسات برجولات" },
-            { src: "pergola-traditional-seating-fakhr-almamlaka-jeddah23.webp", category: "pergola", title: "برجولة ذات طابع تراثي كلاسيكي" },
-            { src: "pergola-white-sofa-fakhr-almamlaka-jeddah31.webp", category: "pergola", title: "برجولة مع جلسة صوفا بيضاء" },
-            { src: "pergola-with-sail-shade-fakhr-almamlaka-jeddah37.webp", category: "pergola", title: "برجولات ممزوجة بأشرعة تظليل" },
-            { src: "pergola-wpc-wooden-roof-fakhr-almamlaka-jeddah16.webp", category: "pergola", title: "برجولة سقف خشب بلاستيكي معالج" },
-            { src: "pergola-wpc-wooden-wall-cladding-fakhr-almamlaka-jeddah50.webp", category: "pergola", title: "برجولة مع تكسية جدران WPC" },
+            // برجولات ومكملاتها لإكمال المسار الأول (45 صورة في الإجمالي)
+            { src: "pergola-khashabia-fakhr-almamlaka-jeddah4.webp", category: "mizalat", title: "برجولة خشبية فخمة للحديقة" },
+            { src: "pergolas-modern-wood-fakhr-almamlaka-jeddah.webp", category: "mizalat", title: "برجولات خشبية مودرن" },
+            { src: "pergola-backyard-string-lights-fakhr-almamlaka-jeddah54.webp", category: "mizalat", title: "برجولات حديقة خلفية بإضاءة ممتازة" },
+            { src: "pergola-corrugated-lexan-carport-shade-fakhr-almamlaka-jeddah52.webp", category: "mizalat", title: "برجولة تظليل لكسان مموج" },
+            { src: "pergola-decor-fakhr-almamlaka-jeddah57.webp", category: "mizalat", title: "برجولة ديكور راقية بجدة" },
 
-            // سواتر (sawater)
+            // سواتر وقرميد ومكملات أخرى لإثراء المسار الثاني (45 صورة)
             { src: "sawaters-building-wall-fakhr-almamlaka-jeddah.webp", category: "sawater", title: "سواتر جدران الفلل والعمائر" },
             { src: "sawater-fabric-fakhr-almamlaka-jeddah18.webp", category: "sawater", title: "سواتر قماشية ممتازة" },
             { src: "sawater-fabric-fakhr-almamlaka-jeddah20.webp", category: "sawater", title: "سواتر قماش فخر المملكة بجدة" },
@@ -684,36 +769,57 @@
             { src: "sawater-majdoul-khashab-fakhr-almamlaka-jeddah9.webp", category: "sawater", title: "سواتر خشبية مجدول معالجة" },
             { src: "sawater-modern-iron-fakhr-almamlaka-jeddah37.webp", category: "sawater", title: "سواتر حديد عصرية مودرن" },
             { src: "sawater-shutter-gate-iron-fakhr-almamlaka-jeddah43.webp", category: "sawater", title: "سواتر بوابات حديد شتر" },
-
-            // هناجر ومستودعات (hangar)
-            { src: "hangar-mostawdaat-fakhr-almamlaka-jeddah1.webp", category: "hangar", title: "هناجر ومستودعات فخر المملكة" },
-            { src: "hangars-industrial-warehouse-fakhr-almamlaka-jeddah11.webp", category: "hangar", title: "هناجر مستودعات صناعية ضخمة" },
-
-            // قرميد (qarmid)
-            { src: "qarmid-tarkib-asateh-fakhr-almamlaka-jeddah16.webp", category: "qarmid", title: "تركيب قرميد أسطح منازل" },
-            { src: "sandwich-qarmid-tarkib-asateh-modern-fakhr-almamlaka-jeddah.webp", category: "qarmid", title: "قرميد ساندوتش بانل مودرن" },
-
-            // أخرى وإعلانات (others)
-            { src: "ads-fakhr-almamlaka-sawater-mizalat-fakhr-almamlaka-jeddah1.webp", category: "others", title: "إعلان فخر المملكة للمظلات" },
-            { src: "ads-fakhr-almamlaka-sawater-white-mizalat-fakhr-almamlaka-jeddah3.webp", category: "others", title: "إعلان مظلات وسواتر فخر المملكة" },
-            { src: "logo-best-fakhr-almamlaka-sawater-gray-mizalat-fakhr-almamlaka-jeddah1.webp", category: "others", title: "شعار فخر المملكة الرمادي" },
-            { src: "logo-fakhr-almamlaka-sawater-white-mizalat-fakhr-almamlaka-jeddah2.webp", category: "others", title: "شعار فخر المملكة الأبيض الفاخر" },
-            { src: "ads-fakhr-almamlaka-sawater-mizalat-white-fakhr-almamlaka-jeddah2.webp", category: "others", title: "لوحة عروض فخر المملكة" }
+            { src: "hangar-mostawdaat-fakhr-almamlaka-jeddah1.webp", category: "sawater", title: "هناجر ومستودعات فخر المملكة" },
+            { src: "hangars-industrial-warehouse-fakhr-almamlaka-jeddah11.webp", category: "sawater", title: "هناجر مستودعات صناعية ضخمة" },
+            { src: "qarmid-tarkib-asateh-fakhr-almamlaka-jeddah16.webp", category: "sawater", title: "تركيب قرميد أسطح منازل" },
+            { src: "sandwich-qarmid-tarkib-asateh-modern-fakhr-almamlaka-jeddah.webp", category: "sawater", title: "قرميد ساندوتش بانل مودرن" },
+            { src: "pergola-galsat-roof-fakhr-almamlaka-jeddah55.webp", category: "sawater", title: "برجولة أسطح مودرن رائعة" },
+            { src: "pergola-galsat-satah-fakhr-almamlaka-jeddah19.webp", category: "sawater", title: "جلسة سطح منزلية برجولة حديد" },
+            { src: "pergola-glass-room-aluminum-fakhr-almamlaka-jeddah45.webp", category: "sawater", title: "برجولة ألمنيوم مغطاة بالزجاج" },
+            { src: "pergola-hadaeq-fakhr-almamlaka-jeddah18.webp", category: "sawater", title: "برجولات حدائق وتنسيق خارجي" },
+            { src: "pergola-hadid-garden-fakhr-almamlaka-jeddah34.webp", category: "sawater", title: "برجولات حديد للحدائق المنزلية" },
+            { src: "pergola-hadid-laser-fakhr-almamlaka-jeddah32.webp", category: "sawater", title: "برجولة حديد قص ليزر ممتازة" },
+            { src: "pergola-hadid-lexan-mamar-fakhr-almamlaka-jeddah33.webp", category: "sawater", title: "برجولة حديد لكسان للممرات" },
+            { src: "pergola-hadid-lexan-roof-fakhr-almamlaka-jeddah35.webp", category: "sawater", title: "برجولة حديد مغطاة باللكسان" },
+            { src: "pergola-hadid-satayer-fakhr-almamlaka-jeddah12.webp", category: "sawater", title: "برجولة حديد مع ستائر جانبية" },
+            { src: "pergola-jalsat-hadaeq-fakhr-almamlaka-jeddah8.webp", category: "sawater", title: "تصميم برجولات جلسات حدائق" },
+            { src: "pergola-khashabia-fakhr-almamlaka-jeddah6.webp", category: "sawater", title: "برجولات خشبية للساحات والاستراحات" },
+            { src: "pergola-khashabia-shalal-fakhr-almamlaka-jeddah28.webp", category: "sawater", title: "برجولة خشبية مع شلال جداري" },
+            { src: "pergola-khashab-modern-fakhr-almamlaka-jeddah1.webp", category: "sawater", title: "برجولة خشبية مودرن عصرية" },
+            { src: "pergola-luxury-garden-fakhr-almamlaka-jeddah27.webp", category: "sawater", title: "برجولة حدائق راقية ومميزة" },
+            { src: "pergola-luxury-villa-fakhr-almamlaka-jeddah39.webp", category: "sawater", title: "برجولة فلل وقصور فاخرة" },
+            { src: "pergola-modern-fakhr-almamlaka-jeddah5.webp", category: "sawater", title: "برجولات مودرن حديد شكل خشب" },
+            { src: "pergola-modern-fakhr-almamlaka-jeddah10.webp", category: "sawater", title: "برجولات حديثة لجلسات العوائل" },
+            { src: "pergola-modern-fakhr-almamlaka-jeddah59.webp", category: "sawater", title: "برجولة تصميم راقي وعصري" },
+            { src: "pergola-modern-led-lighting-fakhr-almamlaka-jeddah20.webp", category: "sawater", title: "برجولة مودرن مجهزة بإضاءة LED" },
+            { src: "pergola-modern-louvered-led-fakhr-almamlaka-jeddah38.webp", category: "sawater", title: "برجولة شرائح لوفر ألمنيوم مضيئة" },
+            { src: "pergola-modern-pool-shade-fakhr-almamlaka-jeddah40.webp", category: "sawater", title: "برجولة تظليل مسابح حديثة" },
+            { src: "pergolas-modern-backyard-designs-fakhr-almamlaka-jeddah.webp", category: "sawater", title: "تصاميم برجولات حدائق منزلية" },
+            { src: "pergolas-modern-fakhr-almamlaka-jeddah1.webp", category: "sawater", title: "برجولات فخمة ومودرن بجدة" },
+            { src: "pergolas-modern-wood-seating-fakhr-almamlaka-jeddah.webp", category: "sawater", title: "برجولة خشبية للجلسات الخارجية" },
+            { src: "pergolas-sawater-mizalat-hanger-privacy-fences-fakhr-almamlaka-jeddah.webp", category: "sawater", title: "برجولات ومظلات وسواتر فخر المملكة" },
+            { src: "pergola-tasmim-asateh-fakhr-almamlaka-jeddah11.webp", category: "sawater", title: "تصاميم برجولات أسطح ومنازل" },
+            { src: "pergola-tasmim-jalsat-fakhr-almamlaka-jeddah7.webp", category: "sawater", title: "تصميم وتركيب جلسات برجولات" },
+            { src: "pergola-traditional-seating-fakhr-almamlaka-jeddah23.webp", category: "sawater", title: "برجولة ذات طابع تراثي كلاسيكي" },
+            { src: "pergola-white-sofa-fakhr-almamlaka-jeddah31.webp", category: "sawater", title: "برجولة مع جلسة صوفا بيضاء" },
+            { src: "pergola-with-sail-shade-fakhr-almamlaka-jeddah37.webp", category: "sawater", title: "برجولات ممزوجة بأشرعة تظليل" },
+            { src: "pergola-wpc-wooden-roof-fakhr-almamlaka-jeddah16.webp", category: "sawater", title: "برجولة سقف خشب بلاستيكي معالج" }
         ];
 
-        // 1. فرز الصور ديناميكيًا وتوليد المسارات التمريرية بناءً على المجلد الفرعي (assets)
         const track1 = document.getElementById('track-1');
         const track2 = document.getElementById('track-2');
 
-        const group1 = imagesDatabase.filter(img => img.category === 'mizalat' || img.category === 'pergola');
-        const group2 = imagesDatabase.filter(img => img.category === 'sawater' || img.category === 'hangar' || img.category === 'qarmid' || img.category === 'others');
+        // فصل مصفوفة الصور بالتساوي وبدقة شديدة لتكون 45 صورة لكل مسار بشكل متناسق وموزع
+        const group1 = imagesDatabase.slice(0, 45); // أول 45 صورة للمسار الأول
+        const group2 = imagesDatabase.slice(45, 90); // الـ 45 صورة التالية للمسار الثاني
 
         function populateTrack(trackElement, imagesList) {
             imagesList.forEach(img => {
                 const slide = document.createElement('div');
                 slide.className = 'slide-item';
-                // تحديث المسار هنا ليشير إلى images/assets/ بشكل تلقائي
-                slide.innerHTML = `<img src="images/assets/${img.src}" alt="${img.title}" onclick="openLightbox('images/assets/${img.src}')" onerror="this.onerror=null; this.src='https://placehold.co/280x200/1a365d/ffffff?text=Fakhr+Almamlaka';" loading="lazy">`;
+                // استخدام المسار النسبي المباشر وبدون أي تكرار لاسم المجلد لتلافي خطأ 404
+                const absoluteImagePath = `./images/assets/${img.src}`;
+                slide.innerHTML = `<img src="${absoluteImagePath}" alt="${img.title}" onclick="openLightbox('${absoluteImagePath}')" onerror="this.onerror=null; this.src='https://placehold.co/280x200/1a365d/ffffff?text=Fakhr+Almamlaka';" loading="lazy">`;
                 trackElement.appendChild(slide);
             });
         }
