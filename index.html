@@ -5,10 +5,8 @@
 <meta charset="UTF-8"> 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 <title>مؤسسة فخر المملكة للمظلات والسواتر بجدة | تركيب مظلات وسواتر وبرجولات</title> 
-<!-- تحديث الوصف التعريفي لزيادة الجذب في محركات البحث -->
 <meta name="description" content="مؤسسة فخر المملكة بجدة للمظلات والسواتر: جودة عالية، أسعار تنافسية، وسرعة في التنفيذ. نوفر أفضل حلول التغطية والحماية لمنازلكم ومنشآتكم في جدة. اتصل بنا الآن!">
 <meta name="keywords" content="مظلات جدة, سواتر جدة, برجولات حدائق, هناجر ومستودعات, فخر المملكة للمظلات, تركيب مظلات السيارات, سواتر و مظلات جدة"> 
-<!-- خطوط جوجل وفونت أوسم للنطاقات --> 
 <link rel="preconnect" href="https://fonts.googleapis.com"> 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
 <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;500;700;900&display=swap" rel="stylesheet"> 
@@ -103,13 +101,6 @@ nav a:hover { color: var(--secondary-color); }
 .admin-form input, .admin-form textarea { width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #cbd5e0; border-radius: 5px; } 
 .secret-admin-trigger { position: fixed; bottom: 10px; right: 10px; width: 25px; height: 25px; background: rgba(26, 54, 93, 0.15); border-radius: 50%; cursor: pointer; z-index: 10000; display: flex; align-items: center; justify-content: center; color: rgba(255, 255, 255, 0.4); font-size: 10px; transition: var(--transition); } 
 .secret-admin-trigger:hover { background: var(--primary-color); color: var(--white); } 
-.reviews-section-outer { background-color: var(--soft-beige); padding: 60px 20px; } 
-.reviews-section { max-width: 1200px; margin: 0 auto; } 
-.review-form-container { background: var(--white); padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); margin-bottom: 30px; border: 1px solid rgba(0,0,0,0.03); } 
-.stars-rating { display: flex; gap: 5px; font-size: 1.5rem; margin-bottom: 15px; cursor: pointer; color: #ccc; } 
-.stars-rating .fa-star.active { color: var(--secondary-color); } 
-.reviews-display-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; } 
-.review-card { background: var(--white); padding: 20px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); border-top: 3px solid var(--primary-color); } 
 footer { background: #1a202c; color: var(--white); padding: 50px 20px 40px; text-align: center; width: 100%; } 
 .footer-logo img { height: 90px; margin-bottom: 20px; max-width: 100%; } 
 .contact-buttons { display: flex; justify-content: center; gap: 20px; margin: 20px 0 30px; flex-wrap: wrap; } 
@@ -123,8 +114,6 @@ footer { background: #1a202c; color: var(--white); padding: 50px 20px 40px; text
 .floating-btn { width: 60px; height: 60px; border-radius: 50%; display: flex; justify-content: center; align-items: center; color: var(--white); font-size: 28px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); text-decoration: none; cursor: pointer; transition: transform 0.3s ease; animation: pulseShake 3.5s infinite ease-in-out; } 
 .floating-btn.btn-whatsapp-float { background-color: #25d366; } 
 .floating-btn.btn-call-float { background-color: #007bff; animation-delay: 0.5s; } 
-.developer-whatsapp-btn { color: #25d366; text-decoration: none; font-weight: 900; background: rgba(37, 211, 102, 0.15); padding: 8px 18px; border-radius: 20px; border: 1px solid rgba(37, 211, 102, 0.3); transition: var(--transition); display: inline-flex; align-items: center; gap: 8px; animation: pulseShake 3s infinite ease-in-out; } 
-.developer-whatsapp-btn:hover { background: #25d366; color: #fff; transform: scale(1.05); } 
 @keyframes pulseShake { 0%, 100% { transform: scale(1) rotate(0deg); box-shadow: 0 4px 10px rgba(37, 211, 102, 0.2); } 15% { transform: scale(1.08) rotate(-6deg); box-shadow: 0 6px 15px rgba(37, 211, 102, 0.35); } 30% { transform: scale(1.08) rotate(6deg); } 45% { transform: scale(1.08) rotate(-3deg); } 60% { transform: scale(1.08) rotate(3deg); } 75% { transform: scale(1.02) rotate(0deg); } } 
 @media (max-width: 992px) { .about-card { flex-direction: column; } .about-img-wrapper { width: 100%; min-height: 300px; } } @media (max-width: 768px) { .header-container { flex-direction: column; gap: 12px; padding: 15px 10px; } .hero h1 { font-size: 1.95rem; } .service-card { flex-direction: column !important; } } 
 </style> 
@@ -215,7 +204,6 @@ footer { background: #1a202c; color: var(--white); padding: 50px 20px 40px; text
         { src: "mizalat-galsat-pvc-mamar-fakhr-almamlaka-jeddah107.webp", isAsset: false },
         { src: "ميزالات-حدائق-pvc-مخروتي-فخر-المملكه-jeddah110.webp", isAsset: false },
         { src: "mizalat-hosh-qmaish-fakhr-almamlaka-jeddah70.webp", isAsset: false }
-        // ... (تم الحفاظ على المصفوفة كاملة في ملفك الفعلي)
     ];
 
     function populateTrack(trackElement, imagesList) {
