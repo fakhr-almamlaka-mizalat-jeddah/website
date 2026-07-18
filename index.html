@@ -2,68 +2,76 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <title>مؤسسة فخر المملكة بجدة | المظلات والسواتر والمقاولات</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="مؤسسة فخر المملكة بجدة للمظلات والسواتر والمقاولات الحديثة. نوفر حلول حماية وديكور بضمان 10 سنوات.">
+    <title>مؤسسة فخر المملكة بجدة | المظلات والسواتر والمقاولات الحديثة</title>
     <style>
-        /* التنسيق العام والخطوط */
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.8; color: #333; margin: 0; }
-        .hero { height: 80vh; background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://github.com/fakhr-almamlaka-mizalat-jeddah/services/blob/main/images/assets/ads-fakhr-almamlaka-sawater-mizalat-jeddah1.webp?raw=true'); background-size: cover; display: flex; align-items: center; justify-content: center; text-align: center; color: #fff; }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; background-color: #fdfbf7; color: #333; line-height: 1.8; }
         
-        /* قسم الإحصائيات */
-        .stats-container { display: flex; justify-content: space-around; padding: 40px; background: #f4f4f4; border-bottom: 5px solid #d4af37; }
-        .stat-box { text-align: center; font-weight: bold; font-size: 20px; }
-        
-        /* قسم نبذة المؤسسة */
-        .about-section { display: flex; align-items: center; padding: 50px; gap: 30px; }
-        .about-text { flex: 1; }
-        
-        /* قسم الخدمات والصيانة */
-        .service-card { border: 1px solid #ddd; padding: 20px; margin: 10px; border-radius: 10px; }
-        .maintenance-note { color: #d4af37; font-weight: bold; background: #fffaf0; padding: 10px; }
-        
-        /* معرض الصور الدائري (Slider) */
-        .gallery-container { display: flex; overflow-x: auto; gap: 15px; padding: 20px; }
-        .gallery-item { min-width: 300px; height: 200px; object-fit: cover; border-radius: 15px; }
+        /* الخلفية المتحركة (Ken Burns) */
+        .hero { height: 100vh; position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center; text-align: center; color: white; }
+        .hero-bg { position: absolute; width: 100%; height: 100%; animation: kenburns 20s infinite alternate; background-image: url('https://github.com/fakhr-almamlaka-mizalat-jeddah/services/blob/main/images/assets/ads-fakhr-almamlaka-sawater-mizalat-jeddah1.webp?raw=true'); background-size: cover; background-position: center; }
+        @keyframes kenburns { from { transform: scale(1); } to { transform: scale(1.2); } }
+        .overlay { position: relative; z-index: 2; background: rgba(0,0,0,0.5); padding: 50px; border-radius: 20px; }
+
+        /* التنقل */
+        nav { background: #003366; padding: 15px; text-align: center; position: sticky; top: 0; z-index: 100; }
+        nav a { color: #d4af37; text-decoration: none; margin: 0 15px; font-weight: bold; font-size: 1.1rem; }
+
+        /* الإحصائيات */
+        .stats { display: flex; justify-content: space-around; padding: 50px 20px; background: #eee; }
+        .stat-item { text-align: center; }
+        .stat-number { font-size: 3rem; color: #003366; font-weight: bold; }
+
+        /* النبذة */
+        .about { padding: 60px 20px; display: flex; align-items: center; gap: 40px; }
+        .about-text { flex: 2; }
+        .about img { flex: 1; width: 100%; max-width: 500px; border-radius: 15px; border: 5px solid #d4af37; }
+
+        /* تذييل واتصال */
+        footer { background: #003366; color: white; padding: 40px; text-align: center; }
+        .contact-btn { display: inline-block; padding: 15px 30px; margin: 10px; background: #25d366; color: white; text-decoration: none; border-radius: 50px; font-weight: bold; }
     </style>
 </head>
 <body>
 
-<!-- قسم المقدمة -->
-<section class="hero">
-    <div>
+<nav>
+    <a href="index.html">الرئيسية</a>
+    <a href="mizalats.html">المظلات</a>
+    <a href="sawaters.html">السواتر</a>
+    <a href="pergolas.html">البرجولات</a>
+    <a href="others.html">خدمات أخرى</a>
+</nav>
+
+<header class="hero">
+    <div class="hero-bg"></div>
+    <div class="overlay">
         <h1>مظلات وسواتر جدة للمقاولات الحديثة</h1>
         <p>نوفر لسيارتك ومنزلك الحماية المثالية والديكور العصري المبتكر ضد أشعة الشمس الحارقة ورطوبة جدة العالية، بضمان حقيقي معتمد يصل إلى 10 سنوات.</p>
     </div>
+</header>
+
+<section class="stats">
+    <div class="stat-item"><div class="stat-number">+600</div><p>مشروع مكتمل بالسعودية</p>
+    </div>
+    <div class="stat-item"><div class="stat-number">+300</div><p>عميل دائم في جدة ومكة</p></div>
+    <div class="stat-item"><div class="stat-number">+20</div><p>سنة خبرة عمل معتمدة</p></div>
 </section>
 
-<!-- الإحصائيات -->
-<section class="stats-container">
-    <div class="stat-box"><div>+600</div><p>مشروع مكتمل بالسعودية</p></div>
-    <div class="stat-box"><div>+300</div><p>عميل دائم في جدة ومكة</p></div>
-    <div class="stat-box"><div>+20</div><p>سنة خبرة عمل معتمدة</p></div>
-</section>
-
-<!-- قسم النبذة -->
-<section class="about-section">
+<section class="about">
     <div class="about-text">
         <h2>نبذة عن مؤسسة فخر المملكة بجدة</h2>
         <p>تتميز مؤسسة فخر المملكة لإنشاء المظلات والسواتر بجدة بريادتها الممتدة في تنفيذ كبرى المشاريع الإنشائية ساندويتش بانل، المظلات السكنية والتجارية، الهناجر والبرجولات في السعودية. نلتزم بتقديم حلول هندسية متطورة باستخدام أجود الخامات العالمية المعتمدة لضمان أقصى درجات الحماية ومقاومة تقلبات الطقس والمناخ بأطول فترات الضمان وبأعلى معايير الدقة الفنية.</p>
     </div>
-    <img src="https://github.com/fakhr-almamlaka-mizalat-jeddah/services/blob/main/images/assets/ads-fakhr-almamlaka-sawater-white-mizalat-fakhr-almamlaka-jeddah3.webp?raw=true" width="400">
+    <img src="https://github.com/fakhr-almamlaka-mizalat-jeddah/services/blob/main/images/assets/ads-fakhr-almamlaka-sawater-white-mizalat-fakhr-almamlaka-jeddah3.webp?raw=true" alt="مؤسسة فخر المملكة بجدة للمظلات والسواتر">
 </section>
 
-<!-- قسم الخدمات والصيانة -->
-<section>
-    <h2>خدماتنا المتخصصة مع صيانة دورية معتمدة</h2>
-    <div class="service-card">
-        <h3>المظلات والسواتر</h3>
-        <p>تصميم وتركيب احترافي. <span class="maintenance-note">تتوفر لدينا عقود صيانة سنوية شاملة لجميع أنواع المظلات.</span></p>
-    </div>
-    <!-- كرر هذا القسم لكل صنف -->
-</section>
-
-<!-- الاتصال -->
 <footer>
-    <a href="https://wa.me/966553511013">واتساب</a> | <a href="tel:0553511013">اتصل بنا</a>
+    <h2>بيانات الاتصال الرسمي</h2>
+    <a href="https://wa.me/966553511013" class="contact-btn">تواصل عبر واتساب</a>
+    <p>الهاتف: 0553511013 | البريد: fakhralmamlakamizalatservicesj@gmail.com</p>
+    <p>مواعيد العمل: السبت - الخميس (7 ص - 11 م) | الجمعة (1 م - 11 م)</p>
 </footer>
 
 </body>
