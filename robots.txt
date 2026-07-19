@@ -5,10 +5,10 @@ Disallow: /images/
 
 # السماح بالوصول إلى الصفحات الأساسية
 Allow: /
-Allow: /mizalat.html
-Allow: /sawater.html
-Allow: /pergolat.html
-Allow: /hanajir.html
+Allow: /mizalats.html
+Allow: /sawaters.html
+Allow: /pergolas.html
+Allow: /others.html
 
 # تحديد مسار خريطة الموقع (Sitemap) بشكل صريح ودقيق
 Sitemap: https://fakhr-almamlaka-mizalat-jeddah.github.io/services/sitemap.xml
